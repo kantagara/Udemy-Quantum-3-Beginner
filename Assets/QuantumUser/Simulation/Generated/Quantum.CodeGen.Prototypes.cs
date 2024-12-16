@@ -95,6 +95,58 @@ namespace Quantum.Prototypes {
         MaterializeUser(frame, ref result, in context);
     }
   }
+  [System.SerializableAttribute()]
+  [Quantum.Prototypes.Prototype(typeof(Quantum.SpawnPoint))]
+  public unsafe partial class SpawnPointPrototype : ComponentPrototype<Quantum.SpawnPoint> {
+    [HideInInspector()]
+    public Int32 _empty_prototype_dummy_field_;
+    partial void MaterializeUser(Frame frame, ref Quantum.SpawnPoint result, in PrototypeMaterializationContext context);
+    public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
+        Quantum.SpawnPoint component = default;
+        Materialize((Frame)f, ref component, in context);
+        return f.Set(entity, component) == SetResult.ComponentAdded;
+    }
+    public void Materialize(Frame frame, ref Quantum.SpawnPoint result, in PrototypeMaterializationContext context = default) {
+        MaterializeUser(frame, ref result, in context);
+    }
+  }
+  [System.SerializableAttribute()]
+  [Quantum.Prototypes.Prototype(typeof(Quantum.SpawnPointManager))]
+  public unsafe class SpawnPointManagerPrototype : ComponentPrototype<Quantum.SpawnPointManager> {
+    [AllocateOnComponentAdded()]
+    [DynamicCollectionAttribute()]
+    public MapEntityId[] AvailableSpawnPoints = {};
+    [AllocateOnComponentAdded()]
+    [DynamicCollectionAttribute()]
+    public MapEntityId[] UsedSpawnPoints = {};
+    public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
+        Quantum.SpawnPointManager component = default;
+        Materialize((Frame)f, ref component, in context);
+        return f.Set(entity, component) == SetResult.ComponentAdded;
+    }
+    public void Materialize(Frame frame, ref Quantum.SpawnPointManager result, in PrototypeMaterializationContext context = default) {
+        if (this.AvailableSpawnPoints.Length == 0) {
+          result.AvailableSpawnPoints = default;
+        } else {
+          var list = frame.AllocateList(out result.AvailableSpawnPoints, this.AvailableSpawnPoints.Length);
+          for (int i = 0; i < this.AvailableSpawnPoints.Length; ++i) {
+            EntityRef tmp = default;
+            PrototypeValidator.FindMapEntity(this.AvailableSpawnPoints[i], in context, out tmp);
+            list.Add(tmp);
+          }
+        }
+        if (this.UsedSpawnPoints.Length == 0) {
+          result.UsedSpawnPoints = default;
+        } else {
+          var list = frame.AllocateList(out result.UsedSpawnPoints, this.UsedSpawnPoints.Length);
+          for (int i = 0; i < this.UsedSpawnPoints.Length; ++i) {
+            EntityRef tmp = default;
+            PrototypeValidator.FindMapEntity(this.UsedSpawnPoints[i], in context, out tmp);
+            list.Add(tmp);
+          }
+        }
+    }
+  }
 }
 #pragma warning restore 0109
 #pragma warning restore 1591

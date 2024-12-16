@@ -142,6 +142,7 @@ namespace Quantum {
 
       // copy runtime config
       var serializer = new QuantumUnityJsonSerializer();
+      RuntimeConfig.Seed = Guid.NewGuid().GetHashCode();
       var runtimeConfig = serializer.CloneConfig(RuntimeConfig);
 
       // set map to this maps asset

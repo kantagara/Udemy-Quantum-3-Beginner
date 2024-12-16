@@ -3,7 +3,7 @@ using UnityEngine.Scripting;
 namespace Quantum {
   using Photon.Deterministic;
   [Preserve]
-  public unsafe class CharacterMovableSystem : SystemMainThreadFilter<CharacterMovableSystem.Filter>, ISignalOnPlayerAdded {
+  public unsafe class CharacterMovableSystem : SystemMainThreadFilter<CharacterMovableSystem.Filter> {
     public override void Update(Frame f, ref Filter filter)
     {
       var input = f.GetPlayerInput(filter.PlayerLink->Player);
@@ -23,19 +23,6 @@ namespace Quantum {
       public PlayerLink* PlayerLink;
     }
 
-    public void OnPlayerAdded(Frame f, PlayerRef player, bool firstTime)
-    {
-      var playerData = f.GetPlayerData(player);
-      var playerEntity = f.Create(playerData.PlayerAvatar);
-      var playerLink = new PlayerLink()
-      {
-        Player = player
-      };
-      f.Add(playerEntity, playerLink);
-      var kcc = f.Unsafe.GetPointer<KCC>(playerEntity);
-      var kccSettings = f.FindAsset(kcc->Settings);
-      kcc->Acceleration = kccSettings.Acceleration;
-      kcc->MaxSpeed = kccSettings.BaseSpeed;
-    }
+    
   }
 }
