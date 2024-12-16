@@ -805,7 +805,24 @@ PlayerSettings:
   webGLMemoryGeometricGrowthStep: 0.2
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: QUANTUM_LOGLEVEL_INFO
+    EmbeddedLinux: QUANTUM_LOGLEVEL_INFO
+    GameCoreScarlett: QUANTUM_LOGLEVEL_INFO
+    GameCoreXboxOne: QUANTUM_LOGLEVEL_INFO
+    LinuxHeadlessSimulation: QUANTUM_LOGLEVEL_INFO
+    Nintendo Switch: QUANTUM_LOGLEVEL_INFO
+    PS4: QUANTUM_LOGLEVEL_INFO
+    PS5: QUANTUM_LOGLEVEL_INFO
+    QNX: QUANTUM_LOGLEVEL_INFO
+    Stadia: QUANTUM_LOGLEVEL_INFO
+    Standalone: QUANTUM_LOGLEVEL_INFO
+    VisionOS: QUANTUM_LOGLEVEL_INFO
+    WebGL: QUANTUM_LOGLEVEL_INFO
+    Windows Store Apps: QUANTUM_LOGLEVEL_INFO
+    XboxOne: QUANTUM_LOGLEVEL_INFO
+    iPhone: QUANTUM_LOGLEVEL_INFO
+    tvOS: QUANTUM_LOGLEVEL_INFO
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
