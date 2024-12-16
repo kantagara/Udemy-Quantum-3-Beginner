@@ -142,9 +142,9 @@ GameObject:
   - component: {fileID: 3014794430628324286}
   - component: {fileID: 757676207454511083}
   - component: {fileID: 6058813873119106819}
-  - component: {fileID: 2174316448031956919}
-  - component: {fileID: 8972368664707175511}
-  - component: {fileID: 5932119652911259280}
+  - component: {fileID: 9057436368533970375}
+  - component: {fileID: 2244894924177644195}
+  - component: {fileID: 5701730400572908625}
   m_Layer: 6
   m_Name: Character_Base
   m_TagString: Untagged
@@ -193,14 +193,14 @@ MonoBehaviour:
       Id:
         Value: 0
     SourceCollider: {fileID: 0}
-    IsEnabled: 0
+    IsEnabled: 1
     Shape2D:
-      ShapeType: 0
+      ShapeType: 1
       PolygonCollider:
         Id:
           Value: 0
       CircleRadius:
-        RawValue: 0
+        RawValue: 65536
       CapsuleSize:
         X:
           RawValue: 0
@@ -256,12 +256,12 @@ MonoBehaviour:
       IsPersistent: 1
       CompoundShapes: []
     ScaledShape2D:
-      ShapeType: 0
+      ShapeType: 1
       PolygonCollider:
         Id:
           Value: 0
       CircleRadius:
-        RawValue: 0
+        RawValue: 65536
       CapsuleSize:
         X:
           RawValue: 0
@@ -321,8 +321,8 @@ MonoBehaviour:
     CallbackFlags:
       Value: 0
   PhysicsBody:
-    IsEnabled: 0
-    Config2D: 116
+    IsEnabled: 1
+    Config2D: 1
     Config3D: 58
     RotationFreeze: 0
     Mass:
@@ -414,7 +414,7 @@ MonoBehaviour:
   OnEntityDestroyed:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2174316448031956919
+--- !u!114 &9057436368533970375
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -439,7 +439,19 @@ MonoBehaviour:
         RawValue: 0
       Y:
         RawValue: 0
---- !u!114 &8972368664707175511
+--- !u!114 &2244894924177644195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326267824891306075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49b87f4ed6c41843ad6736dead92237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5701730400572908625
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -452,18 +464,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 534198499139429989}
---- !u!114 &5932119652911259280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1326267824891306075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c49b87f4ed6c41843ad6736dead92237, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1739315570316238824
 GameObject:
   m_ObjectHideFlags: 0

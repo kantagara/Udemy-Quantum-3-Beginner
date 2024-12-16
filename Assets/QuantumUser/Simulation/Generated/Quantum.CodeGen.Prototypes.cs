@@ -53,9 +53,11 @@ namespace Quantum.Prototypes {
   [Quantum.Prototypes.Prototype(typeof(Quantum.Input))]
   public unsafe partial class InputPrototype : StructPrototype {
     public FPVector2 Direction;
+    public FPVector2 MousePosition;
     partial void MaterializeUser(Frame frame, ref Quantum.Input result, in PrototypeMaterializationContext context);
     public void Materialize(Frame frame, ref Quantum.Input result, in PrototypeMaterializationContext context = default) {
         result.Direction = this.Direction;
+        result.MousePosition = this.MousePosition;
         MaterializeUser(frame, ref result, in context);
     }
   }

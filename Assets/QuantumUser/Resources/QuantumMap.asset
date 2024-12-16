@@ -37,7 +37,2587 @@ MonoBehaviour:
   GridNodeSize: 4
   NavMeshLinks: []
   Regions: []
-  StaticColliders2D: []
+  StaticColliders2D:
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 2722966
+      Y:
+        RawValue: 3441433
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 0
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -1021475
+      Y:
+        RawValue: -3135520
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 1
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -3488334
+      Y:
+        RawValue: 4231339
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 2
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 1389363
+      Y:
+        RawValue: 200875
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 3
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 1389363
+      Y:
+        RawValue: -2850816
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 4
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 5960499
+      Y:
+        RawValue: -2850816
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 5
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 5960499
+      Y:
+        RawValue: 530841
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 6
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 7385907
+      Y:
+        RawValue: 530841
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 7
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 7385907
+      Y:
+        RawValue: 3578265
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 8
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 7385907
+      Y:
+        RawValue: 5609881
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 9
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 5216665
+      Y:
+        RawValue: 5609881
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 10
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 5216665
+      Y:
+        RawValue: 5609881
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 11
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -2768896
+      Y:
+        RawValue: 6212271
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 12
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -4718592
+      Y:
+        RawValue: 6212271
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 13
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -4718592
+      Y:
+        RawValue: 7556301
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 14
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -4718592
+      Y:
+        RawValue: -3466854
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 15
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 3758489
+      Y:
+        RawValue: -3466854
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 16
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 3758489
+      Y:
+        RawValue: 5734400
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 17
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -727373
+      Y:
+        RawValue: -6887424
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 18
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 2368994
+      Y:
+        RawValue: -7570293
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 19
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 1143011
+      Y:
+        RawValue: -7562912
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 20
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 5737459
+      Y:
+        RawValue: -5577147
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 21
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -5354264
+      Y:
+        RawValue: -6136505
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 22
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -4535149
+      Y:
+        RawValue: -5760175
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 23
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -2327343
+      Y:
+        RawValue: -5908896
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 24
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 2626555
+      Y:
+        RawValue: -234
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 1
+    CircleRadius:
+      RawValue: 65536
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 25
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 5234937
+      Y:
+        RawValue: -2744898
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 65536
+      Y:
+        RawValue: 65536
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: QuadStaticCollider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 26
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 5747691
+      Y:
+        RawValue: -1961099
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 114688
+      Y:
+        RawValue: 258867
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 27
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 5550599
+      Y:
+        RawValue: 4513159
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 294912
+      Y:
+        RawValue: 131072
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 28
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 4945306
+      Y:
+        RawValue: 474507
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 163840
+      Y:
+        RawValue: 98304
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 29
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 2315237
+      Y:
+        RawValue: 5082660
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 147456
+      Y:
+        RawValue: 98304
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 30
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -5880673
+      Y:
+        RawValue: -2794605
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 294912
+      Y:
+        RawValue: 163840
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 31
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -6822297
+      Y:
+        RawValue: 1021472
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 491520
+      Y:
+        RawValue: 655360
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 32
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 6678118
+      Y:
+        RawValue: -4230349
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 491520
+      Y:
+        RawValue: 655360
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 33
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -5893016
+      Y:
+        RawValue: 3515106
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 196608
+      Y:
+        RawValue: 98304
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 34
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 1889238
+      Y:
+        RawValue: -5919535
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 229376
+      Y:
+        RawValue: 106496
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 35
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 4318188
+      Y:
+        RawValue: -5985632
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 294912
+      Y:
+        RawValue: 131072
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 36
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 433518
+      Y:
+        RawValue: -5815073
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 114688
+      Y:
+        RawValue: 258867
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 37
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -3000576
+      Y:
+        RawValue: -5189730
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 114688
+      Y:
+        RawValue: 258867
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 38
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -882060
+      Y:
+        RawValue: -5510523
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 347341
+      Y:
+        RawValue: 32768
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 39
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -3130667
+      Y:
+        RawValue: -3779445
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 360448
+      Y:
+        RawValue: 32768
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 40
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 1230531
+      Y:
+        RawValue: -4888985
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 360448
+      Y:
+        RawValue: 32768
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 41
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -58082
+      Y:
+        RawValue: -6734271
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 147456
+      Y:
+        RawValue: 98304
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 42
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -4021910
+      Y:
+        RawValue: -4967232
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 147456
+      Y:
+        RawValue: 98304
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 43
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 4344067
+      Y:
+        RawValue: -6766900
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 58982
+      Y:
+        RawValue: 163840
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 44
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -2738028
+      Y:
+        RawValue: 3025349
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 58982
+      Y:
+        RawValue: 163840
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 45
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -3403397
+      Y:
+        RawValue: 489204
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 58982
+      Y:
+        RawValue: 163840
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 46
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -6978773
+      Y:
+        RawValue: -1123329
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 163840
+      Y:
+        RawValue: 65536
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 47
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -6850207
+      Y:
+        RawValue: 4846041
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 294912
+      Y:
+        RawValue: 131072
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 48
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 1662919
+      Y:
+        RawValue: 7629387
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 294912
+      Y:
+        RawValue: 131072
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 49
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -588537
+      Y:
+        RawValue: 672916
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 58982
+      Y:
+        RawValue: 163840
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 50
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 2091607
+      Y:
+        RawValue: 3315848
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 294912
+      Y:
+        RawValue: 131072
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 51
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -1582492
+      Y:
+        RawValue: -1721319
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 294912
+      Y:
+        RawValue: 163840
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 52
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -6821642
+      Y:
+        RawValue: -7294157
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 884736
+      Y:
+        RawValue: 491520
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 53
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -253668
+      Y:
+        RawValue: 4074033
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 229376
+      Y:
+        RawValue: 98304
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 54
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -1744459
+      Y:
+        RawValue: 2584820
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 360448
+      Y:
+        RawValue: 32768
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 55
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -4560430
+      Y:
+        RawValue: 5292736
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 347341
+      Y:
+        RawValue: 32768
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 56
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -4319813
+      Y:
+        RawValue: 494024
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 262144
+      Y:
+        RawValue: 65536
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 57
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: -2226156
+      Y:
+        RawValue: -2712016
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 262144
+      Y:
+        RawValue: 65536
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 58
+      MutableMode: 0
+  - Rotation:
+      RawValue: 0
+    Position:
+      X:
+        RawValue: 548042
+      Y:
+        RawValue: -386957
+    Height:
+      RawValue: 0
+    VerticalOffset:
+      RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    Layer: 8
+    ShapeType: 4
+    CircleRadius:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 262144
+      Y:
+        RawValue: 65536
+    CapsuleSize:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+    EdgeExtent:
+      RawValue: 0
+    PolygonCollider:
+      Vertices: []
+      Normals: []
+    StaticData:
+      Name: Collider
+      Tag: Untagged
+      Layer: 8
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 59
+      MutableMode: 0
   StaticColliders3D:
   - Rotation:
       X:

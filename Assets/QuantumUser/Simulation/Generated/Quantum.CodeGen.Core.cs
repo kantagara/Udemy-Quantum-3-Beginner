@@ -401,14 +401,17 @@ namespace Quantum {
   }
   [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct Input {
-    public const Int32 SIZE = 16;
+    public const Int32 SIZE = 32;
     public const Int32 ALIGNMENT = 8;
     [FieldOffset(0)]
     public FPVector2 Direction;
+    [FieldOffset(16)]
+    public FPVector2 MousePosition;
     public override Int32 GetHashCode() {
       unchecked { 
         var hash = 19249;
         hash = hash * 31 + Direction.GetHashCode();
+        hash = hash * 31 + MousePosition.GetHashCode();
         return hash;
       }
     }
@@ -428,11 +431,12 @@ namespace Quantum {
     static partial void SerializeCodeGen(void* ptr, FrameSerializer serializer) {
         var p = (Input*)ptr;
         FPVector2.Serialize(&p->Direction, serializer);
+        FPVector2.Serialize(&p->MousePosition, serializer);
     }
   }
   [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct _globals_ {
-    public const Int32 SIZE = 648;
+    public const Int32 SIZE = 744;
     public const Int32 ALIGNMENT = 8;
     [FieldOffset(0)]
     public AssetRef<Map> Map;
@@ -456,12 +460,12 @@ namespace Quantum {
     public Int32 PlayerConnectedCount;
     [FieldOffset(544)]
     [FramePrinter.FixedArrayAttribute(typeof(Input), 6)]
-    private fixed Byte _input_[96];
-    [FieldOffset(640)]
+    private fixed Byte _input_[192];
+    [FieldOffset(736)]
     public BitSet6 PlayerLastConnectionState;
     public FixedArray<Input> input {
       get {
-        fixed (byte* p = _input_) { return new FixedArray<Input>(p, 16, 6); }
+        fixed (byte* p = _input_) { return new FixedArray<Input>(p, 32, 6); }
       }
     }
     public override Int32 GetHashCode() {
@@ -670,6 +674,7 @@ namespace Quantum {
       var i = _globals->input.GetPointer(player);
       i->Direction = input.Direction;
       i->Direction = input.Direction;
+      i->MousePosition = input.MousePosition;
     }
     public Input* GetPlayerInput(PlayerRef player) {
       if ((int)player >= (int)_globals->input.Length) { throw new System.ArgumentOutOfRangeException("player"); }

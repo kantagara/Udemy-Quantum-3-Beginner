@@ -4,4 +4,5 @@ component PlayerLink{
 
 input {
   FPVector2 Direction;
+  FPVector2 MousePosition;
 }

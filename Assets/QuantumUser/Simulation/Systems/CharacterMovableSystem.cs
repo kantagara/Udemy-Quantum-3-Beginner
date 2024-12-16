@@ -7,6 +7,18 @@ namespace Quantum {
     public override void Update(Frame f, ref Filter filter)
     {
       var input = f.GetPlayerInput(filter.PlayerLink->Player);
+      MovePlayer(f, filter, input);
+      RotatePlayer(f, filter, input);
+    }
+
+    private void RotatePlayer(Frame frame, Filter filter, Input* input)
+    {
+      var direction = input->MousePosition - filter.Transform->Position;
+      filter.Transform->Rotation = FPVector2.RadiansSigned(FPVector2.Up, direction);
+    }
+
+    private static void MovePlayer(Frame f, Filter filter, Input* input)
+    {
       var direction = input->Direction;
       if (direction.Magnitude > 1)
       {
@@ -21,6 +33,7 @@ namespace Quantum {
       public EntityRef Entity;
       public KCC* KCC;
       public PlayerLink* PlayerLink;
+      public Transform2D* Transform;
     }
 
     
