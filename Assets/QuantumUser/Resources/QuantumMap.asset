@@ -52,7 +52,7 @@ MonoBehaviour:
       X:
         RawValue: 0
       Y:
-        RawValue: -164495
+        RawValue: 0
       Z:
         RawValue: 0
     PhysicsMaterial:
@@ -76,7 +76,7 @@ MonoBehaviour:
     StaticData:
       Name: MeshStaticCollider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0

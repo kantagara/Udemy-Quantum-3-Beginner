@@ -24,5 +24,8 @@ MonoBehaviour:
   AutoBuildOnPlaymodeChanged: 96
   AutoBuildOnBuild: 96
   AutoRunQtnCodeGen: 0
-  AssetGuidOverrides: []
+  AssetGuidOverrides:
+  - Asset: {fileID: 11400000, guid: de59127670eb7d04dbf68446c15d7cf2, type: 2}
+    Guid:
+      Value: 316719393997610777
   QuantumSolutionPath: 

@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: a405b8ade8c0e46dd8914436bd49508a
+labels:
+- QuantumAsset
 PrefabImporter:
   externalObjects: {}
   userData: 
