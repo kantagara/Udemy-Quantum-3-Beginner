@@ -142,9 +142,9 @@ GameObject:
   - component: {fileID: 3014794430628324286}
   - component: {fileID: 757676207454511083}
   - component: {fileID: 6058813873119106819}
-  - component: {fileID: 9057436368533970375}
-  - component: {fileID: 2244894924177644195}
-  - component: {fileID: 5701730400572908625}
+  - component: {fileID: 1251794062626908961}
+  - component: {fileID: 6259300736678261251}
+  - component: {fileID: 7963562064036143407}
   m_Layer: 6
   m_Name: Character_Base
   m_TagString: Untagged
@@ -319,7 +319,7 @@ MonoBehaviour:
     LayerSource: 0
     Layer: 6
     CallbackFlags:
-      Value: 0
+      Value: 4095
   PhysicsBody:
     IsEnabled: 1
     Config2D: 1
@@ -414,7 +414,7 @@ MonoBehaviour:
   OnEntityDestroyed:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &9057436368533970375
+--- !u!114 &1251794062626908961
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -439,7 +439,7 @@ MonoBehaviour:
         RawValue: 0
       Y:
         RawValue: 0
---- !u!114 &2244894924177644195
+--- !u!114 &6259300736678261251
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -451,7 +451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c49b87f4ed6c41843ad6736dead92237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5701730400572908625
+--- !u!114 &7963562064036143407
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -464,6 +464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 534198499139429989}
+  overheadUi: {fileID: 1892350581194458970}
 --- !u!1 &1739315570316238824
 GameObject:
   m_ObjectHideFlags: 0

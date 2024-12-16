@@ -3,7 +3,7 @@ using UnityEngine.Scripting;
 namespace Quantum {
   using Photon.Deterministic;
   [Preserve]
-  public unsafe class CharacterMovableSystem : SystemMainThreadFilter<CharacterMovableSystem.Filter> {
+  public unsafe class CharacterMovableSystem : SystemMainThreadFilter<CharacterMovableSystem.Filter>, ISignalOnTriggerEnter2D, ISignalOnTriggerExit2D {
     public override void Update(Frame f, ref Filter filter)
     {
       var input = f.GetPlayerInput(filter.PlayerLink->Player);
@@ -36,6 +36,25 @@ namespace Quantum {
       public Transform2D* Transform;
     }
 
-    
+
+    public void OnTriggerEnter2D(Frame f, TriggerInfo2D info)
+    {
+      if(!f.TryGet(info.Entity, out PlayerLink playerLink))
+        return;
+      if(!f.TryGet<Grass>(info.Other, out _))
+        return;
+      f.Events.OnPlayerEnteredGrass(playerLink.Player);
+        
+    }
+
+    public void OnTriggerExit2D(Frame f, ExitInfo2D info)
+    {
+      if(!f.TryGet(info.Entity, out PlayerLink playerLink))
+        return;
+      if(!f.TryGet<Grass>(info.Other, out _))
+        return;
+      f.Events.OnPlayerExitGrass(playerLink.Player);
+
+    }
   }
 }
