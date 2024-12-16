@@ -52,10 +52,10 @@ namespace Quantum.Prototypes {
   [System.SerializableAttribute()]
   [Quantum.Prototypes.Prototype(typeof(Quantum.Input))]
   public unsafe partial class InputPrototype : StructPrototype {
-    [HideInInspector()]
-    public Int32 _empty_prototype_dummy_field_;
+    public FPVector2 Direction;
     partial void MaterializeUser(Frame frame, ref Quantum.Input result, in PrototypeMaterializationContext context);
     public void Materialize(Frame frame, ref Quantum.Input result, in PrototypeMaterializationContext context = default) {
+        result.Direction = this.Direction;
         MaterializeUser(frame, ref result, in context);
     }
   }
@@ -77,6 +77,21 @@ namespace Quantum.Prototypes {
         result.MaxSpeed = this.MaxSpeed;
         result.Acceleration = this.Acceleration;
         result.Velocity = this.Velocity;
+        MaterializeUser(frame, ref result, in context);
+    }
+  }
+  [System.SerializableAttribute()]
+  [Quantum.Prototypes.Prototype(typeof(Quantum.PlayerLink))]
+  public unsafe partial class PlayerLinkPrototype : ComponentPrototype<Quantum.PlayerLink> {
+    public PlayerRef Player;
+    partial void MaterializeUser(Frame frame, ref Quantum.PlayerLink result, in PrototypeMaterializationContext context);
+    public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
+        Quantum.PlayerLink component = default;
+        Materialize((Frame)f, ref component, in context);
+        return f.Set(entity, component) == SetResult.ComponentAdded;
+    }
+    public void Materialize(Frame frame, ref Quantum.PlayerLink result, in PrototypeMaterializationContext context = default) {
+        result.Player = this.Player;
         MaterializeUser(frame, ref result, in context);
     }
   }

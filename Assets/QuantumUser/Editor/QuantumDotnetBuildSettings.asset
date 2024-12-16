@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: QuantumDotnetBuildSettings
   m_EditorClassIdentifier: 
   ShowCompiledDllAfterBuild: 1
-  ProjectSettings: {fileID: 11400000, guid: a2fd121bb12870947b16bfe609e7edac, type: 2}
+  ProjectSettings: {fileID: 11400000, guid: 9e5c9f9f565c96444ba34e9374442985, type: 2}
   SimulationProjectTemplate: {fileID: 4900000, guid: 2ebd97374a072da4ea30a957873ddbde,
     type: 3}
   RunnerProjectTemplate: {fileID: 4900000, guid: 969d2f143d1772d448bcae66829c1f5c,
