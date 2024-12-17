@@ -8153,8 +8153,8 @@ MonoBehaviour:
   LocalPlayers:
   - PlayerAvatar:
       Id:
-        Value: 1406837758412999122
-    PlayerNickname: 
+        Value: 1482840388342383833
+    PlayerNickname: Nikola
   MaxPlayerCount: 5
   SimulationSpeedMultiplier: 1
   DisplaySaveAndReloadButton: 0
