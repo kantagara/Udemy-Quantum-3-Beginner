@@ -73,6 +73,23 @@ namespace Quantum.Prototypes {
     }
   }
   [System.SerializableAttribute()]
+  [Quantum.Prototypes.Prototype(typeof(Quantum.Damageable))]
+  public unsafe partial class DamageablePrototype : ComponentPrototype<Quantum.Damageable> {
+    public FP Health;
+    public AssetRef<DamageableData> DamageableData;
+    partial void MaterializeUser(Frame frame, ref Quantum.Damageable result, in PrototypeMaterializationContext context);
+    public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
+        Quantum.Damageable component = default;
+        Materialize((Frame)f, ref component, in context);
+        return f.Set(entity, component) == SetResult.ComponentAdded;
+    }
+    public void Materialize(Frame frame, ref Quantum.Damageable result, in PrototypeMaterializationContext context = default) {
+        result.Health = this.Health;
+        result.DamageableData = this.DamageableData;
+        MaterializeUser(frame, ref result, in context);
+    }
+  }
+  [System.SerializableAttribute()]
   [Quantum.Prototypes.Prototype(typeof(Quantum.Grass))]
   public unsafe partial class GrassPrototype : ComponentPrototype<Quantum.Grass> {
     [HideInInspector()]
