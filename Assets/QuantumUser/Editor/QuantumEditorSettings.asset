@@ -28,4 +28,7 @@ MonoBehaviour:
   - Asset: {fileID: 11400000, guid: de59127670eb7d04dbf68446c15d7cf2, type: 2}
     Guid:
       Value: 316719393997610777
+  - Asset: {fileID: 11400000, guid: 67ce6ceee413db246b515dfe51b1e60c, type: 2}
+    Guid:
+      Value: 358071846380822289
   QuantumSolutionPath: 

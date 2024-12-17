@@ -202,7 +202,7 @@ MonoBehaviour:
     RawValue: 6554
   MaxContacts: 8
   LayerMask:
-    BitMask: -1
+    BitMask: 4087
   UseManifoldNormal: 0
   AirControl: 1
   Acceleration:
@@ -455,3 +455,13 @@ MonoBehaviour:
   HeapPageShift: 15
   HeapPageCount: 256
   HeapExtraCount: 0
+  HealthPickupItem:
+    Id:
+      Value: 1304713334223252507
+  WeaponTypesAndPrototypes:
+  - WeaponType: 0
+    EntityPrototype: {fileID: 3097001405596171208, guid: d244832ba447fcb41bea3b620123dd43,
+      type: 3}
+  - WeaponType: 1
+    EntityPrototype: {fileID: 3097001405596171208, guid: 16923f1ca83aede44adc48e9f8c19dd7,
+      type: 3}
