@@ -33,7 +33,8 @@ namespace Quantum {
     public void OnAdded(Frame f, EntityRef entity, Damageable* component)
     {
       var damageableData = f.FindAsset(component->DamageableData);
-      component->Health = damageableData.MaxHealth;
+      var characterStats = f.Get<CharacterStats>(entity);
+      component->Health = damageableData.MaxHealth * f.FindAsset(characterStats.CharacterStatsConfig).HealthMultiplier;
     }
 
 

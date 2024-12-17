@@ -1,0 +1,4 @@
+component CharacterStats
+{
+    AssetRef<CharacterStatsConfig> CharacterStatsConfig;
+}

@@ -10,6 +10,8 @@ namespace Quantum.Menu.CharacterSelection
         [SerializeField] private Image characterImage;
         [SerializeField] private TMP_Text characterName;
         [SerializeField] private GameObject characterSelected;
+        [SerializeField] private TMP_Text fireRateModifier;
+        [SerializeField] private TMP_Text healthMultiplier;
 
         private CharacterModel _model;
 
@@ -19,6 +21,8 @@ namespace Quantum.Menu.CharacterSelection
         {
             characterImage.sprite = model.CharacterImage;
             characterName.text = model.CharacterName;
+            fireRateModifier.text = model.CharacterStatsConfig.FireRateModifier.ToString();
+            healthMultiplier.text = model.CharacterStatsConfig.HealthMultiplier.ToString();
             _model = model;
         }
 

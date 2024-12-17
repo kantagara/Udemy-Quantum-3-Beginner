@@ -735,6 +735,24 @@ namespace Quantum {
     }
   }
   [StructLayout(LayoutKind.Explicit)]
+  public unsafe partial struct CharacterStats : Quantum.IComponent {
+    public const Int32 SIZE = 8;
+    public const Int32 ALIGNMENT = 8;
+    [FieldOffset(0)]
+    public AssetRef<CharacterStatsConfig> CharacterStatsConfig;
+    public override Int32 GetHashCode() {
+      unchecked { 
+        var hash = 18671;
+        hash = hash * 31 + CharacterStatsConfig.GetHashCode();
+        return hash;
+      }
+    }
+    public static void Serialize(void* ptr, FrameSerializer serializer) {
+        var p = (CharacterStats*)ptr;
+        AssetRef.Serialize(&p->CharacterStatsConfig, serializer);
+    }
+  }
+  [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct Damageable : Quantum.IComponent {
     public const Int32 SIZE = 16;
     public const Int32 ALIGNMENT = 8;
@@ -1073,6 +1091,8 @@ namespace Quantum {
       BuildSignalsArrayOnComponentRemoved<CharacterController2D>();
       BuildSignalsArrayOnComponentAdded<CharacterController3D>();
       BuildSignalsArrayOnComponentRemoved<CharacterController3D>();
+      BuildSignalsArrayOnComponentAdded<Quantum.CharacterStats>();
+      BuildSignalsArrayOnComponentRemoved<Quantum.CharacterStats>();
       BuildSignalsArrayOnComponentAdded<Quantum.Damageable>();
       BuildSignalsArrayOnComponentRemoved<Quantum.Damageable>();
       BuildSignalsArrayOnComponentAdded<Quantum.GameManager>();
@@ -1220,6 +1240,7 @@ namespace Quantum {
       typeRegistry.Register(typeof(Button), Button.SIZE);
       typeRegistry.Register(typeof(CharacterController2D), CharacterController2D.SIZE);
       typeRegistry.Register(typeof(CharacterController3D), CharacterController3D.SIZE);
+      typeRegistry.Register(typeof(Quantum.CharacterStats), Quantum.CharacterStats.SIZE);
       typeRegistry.Register(typeof(Quantum.CircleStateUnion), Quantum.CircleStateUnion.SIZE);
       typeRegistry.Register(typeof(ColorRGBA), ColorRGBA.SIZE);
       typeRegistry.Register(typeof(ComponentPrototypeRef), ComponentPrototypeRef.SIZE);
@@ -1303,9 +1324,10 @@ namespace Quantum {
       typeRegistry.Register(typeof(Quantum._globals_), Quantum._globals_.SIZE);
     }
     static partial void InitComponentTypeIdGen() {
-      ComponentTypeId.Reset(ComponentTypeId.BuiltInComponentCount + 12)
+      ComponentTypeId.Reset(ComponentTypeId.BuiltInComponentCount + 13)
         .AddBuiltInComponents()
         .Add<Quantum.Bullet>(Quantum.Bullet.Serialize, null, null, ComponentFlags.None)
+        .Add<Quantum.CharacterStats>(Quantum.CharacterStats.Serialize, null, null, ComponentFlags.None)
         .Add<Quantum.Damageable>(Quantum.Damageable.Serialize, null, null, ComponentFlags.None)
         .Add<Quantum.GameManager>(Quantum.GameManager.Serialize, null, null, ComponentFlags.Singleton)
         .Add<Quantum.Grass>(Quantum.Grass.Serialize, null, null, ComponentFlags.None)

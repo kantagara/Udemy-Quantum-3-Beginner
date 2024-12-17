@@ -3448,6 +3448,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character_Yellow
       objectReference: {fileID: 0}
+    - target: {fileID: 1749185392685061665, guid: 087898557506e714b83fb874784c9772,
+        type: 3}
+      propertyPath: Prototype.CharacterStatsConfig.Id.Value
+      value: 371542487096452778
+      objectReference: {fileID: 0}
     - target: {fileID: 2247498283317356343, guid: 087898557506e714b83fb874784c9772,
         type: 3}
       propertyPath: m_RigLayers.Array.size
@@ -3467,6 +3472,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Prototype.PlayerStatsConfig.Id.Value
       value: 270959023558638221
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749681252687051136, guid: 087898557506e714b83fb874784c9772,
+        type: 3}
+      propertyPath: Prototype.CharacterStatsConfig.Id.Value
+      value: 371542487096452778
       objectReference: {fileID: 0}
     - target: {fileID: 3014794430628324286, guid: 087898557506e714b83fb874784c9772,
         type: 3}

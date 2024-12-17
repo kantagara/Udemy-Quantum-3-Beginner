@@ -17,7 +17,8 @@ namespace Quantum
         protected void FireWeapon(Frame f, WeaponSystem.Filter filter)
         {
             if (filter.Weapon->Ammo <= 0) return;
-            filter.Weapon->CooldownTime = Cooldown;
+            var characterStats = f.Get<CharacterStats>(filter.Entity);
+            filter.Weapon->CooldownTime = Cooldown * f.FindAsset(characterStats.CharacterStatsConfig).FireRateModifier;
             filter.Weapon->Ammo--;
             f.Events.AmmoChanged(filter.Entity, filter.Weapon->Ammo);
             f.Signals.CreateBullet(filter.Entity, this);

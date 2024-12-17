@@ -73,6 +73,21 @@ namespace Quantum.Prototypes {
     }
   }
   [System.SerializableAttribute()]
+  [Quantum.Prototypes.Prototype(typeof(Quantum.CharacterStats))]
+  public unsafe partial class CharacterStatsPrototype : ComponentPrototype<Quantum.CharacterStats> {
+    public AssetRef<CharacterStatsConfig> CharacterStatsConfig;
+    partial void MaterializeUser(Frame frame, ref Quantum.CharacterStats result, in PrototypeMaterializationContext context);
+    public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
+        Quantum.CharacterStats component = default;
+        Materialize((Frame)f, ref component, in context);
+        return f.Set(entity, component) == SetResult.ComponentAdded;
+    }
+    public void Materialize(Frame frame, ref Quantum.CharacterStats result, in PrototypeMaterializationContext context = default) {
+        result.CharacterStatsConfig = this.CharacterStatsConfig;
+        MaterializeUser(frame, ref result, in context);
+    }
+  }
+  [System.SerializableAttribute()]
   [Quantum.Prototypes.Prototype(typeof(Quantum.CircleStateUnion))]
   public unsafe partial class CircleStateUnionPrototype : UnionPrototype {
     public string _field_used_;

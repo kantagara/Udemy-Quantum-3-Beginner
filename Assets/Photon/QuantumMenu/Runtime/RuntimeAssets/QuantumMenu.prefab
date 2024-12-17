@@ -258,7 +258,7 @@ MonoBehaviour:
     RuntimePlayers:
     - PlayerAvatar:
         Id:
-          Value: 1406837758412999122
+          Value: 1443501189907872084
       PlayerNickname: Gara
     SessionConfig: {fileID: 0}
     ServerSettings: {fileID: 0}
@@ -570,9 +570,9 @@ MonoBehaviour:
   _isModal: 0
   _plugins: []
   characterModels:
-  - {fileID: 11400000, guid: bea4780001de1e645a2ec8be06ac2c20, type: 2}
-  - {fileID: 11400000, guid: 0c7f58762588b7541b150ff6975679fc, type: 2}
-  selectableCharacter: {fileID: 2160646075701528126, guid: 6f9f882760c58834caebf0407569235b,
+  - {fileID: 11400000, guid: dc52e9bfc2b041745823e5c8d079dd93, type: 2}
+  - {fileID: 11400000, guid: 4240c03b7f28d2a409278816d515a5b8, type: 2}
+  selectableCharacter: {fileID: 2160646075701528126, guid: 7ecaab068c9caa547ad8313ee9c6e95f,
     type: 3}
   characterSelectionParent: {fileID: 7569083751500118818}
   quantumMenuUIController: {fileID: 7243461719588803421}

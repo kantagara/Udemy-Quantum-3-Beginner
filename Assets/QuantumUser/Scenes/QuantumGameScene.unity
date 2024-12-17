@@ -97,9 +97,9 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: e4f43850811d42a49bbe4ce646d9dc25,
+  m_LightingDataAsset: {fileID: 112000000, guid: 7c8d6e8f156c5b6468868637bee884a0,
     type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 6b5b45593a03a27439997acb67617b49,
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 76a65f0a3b6c4bb46ae43490b214db5e,
     type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -8749,7 +8749,7 @@ MonoBehaviour:
   LocalPlayers:
   - PlayerAvatar:
       Id:
-        Value: 1406837758412999122
+        Value: 1443501189907872084
     PlayerNickname: Nikola
   MaxPlayerCount: 5
   SimulationSpeedMultiplier: 1

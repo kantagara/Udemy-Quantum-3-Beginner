@@ -3470,6 +3470,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1749185392685061665, guid: 087898557506e714b83fb874784c9772,
+        type: 3}
+      propertyPath: Prototype.CharacterStatsConfig.Id.Value
+      value: 370516837380560287
+      objectReference: {fileID: 0}
     - target: {fileID: 1892350581194458970, guid: 087898557506e714b83fb874784c9772,
         type: 3}
       propertyPath: m_Layer
@@ -3494,6 +3499,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Prototype.PlayerStatsConfig.Id.Value
       value: 305594962581709274
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749681252687051136, guid: 087898557506e714b83fb874784c9772,
+        type: 3}
+      propertyPath: Prototype.CharacterStatsConfig.Id.Value
+      value: 370516837380560287
       objectReference: {fileID: 0}
     - target: {fileID: 3014794430628324286, guid: 087898557506e714b83fb874784c9772,
         type: 3}
@@ -3574,11 +3584,6 @@ PrefabInstance:
         type: 3}
       propertyPath: BindBehaviour
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7613737136724776447, guid: 087898557506e714b83fb874784c9772,
-        type: 3}
-      propertyPath: Prototype.WeaponData.Id.Value
-      value: 400169065178236275
       objectReference: {fileID: 0}
     - target: {fileID: 8118368861413684301, guid: 087898557506e714b83fb874784c9772,
         type: 3}
