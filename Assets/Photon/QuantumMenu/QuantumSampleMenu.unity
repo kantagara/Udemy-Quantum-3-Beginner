@@ -314,6 +314,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1062840278 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7243461719588803421, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1492709446}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e505ceee2d32b0241826bc159c565843, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1391196892
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,6 +525,11 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 7243461719588803421, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0,
         type: 3}
+      propertyPath: _screens.Array.data[7]
+      value: 
+      objectReference: {fileID: 1505182329}
+    - target: {fileID: 7243461719588803421, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0,
+        type: 3}
       propertyPath: DefaultConnectionArgs.SessionConfig
       value: 
       objectReference: {fileID: 0}
@@ -676,12 +693,50 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5640739138518030115, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1557784162981459829, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4822158957990351311, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1505182329}
   m_SourcePrefab: {fileID: 100100000, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0, type: 3}
+--- !u!224 &1492709447 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7569083751500118818, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1492709446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1505182322 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4822158957990351311, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1492709446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1505182329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505182322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5c63eaa6e93d624e8a70dd878c5c900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isModal: 0
+  _plugins: []
+  characterModels:
+  - {fileID: 11400000, guid: bea4780001de1e645a2ec8be06ac2c20, type: 2}
+  - {fileID: 11400000, guid: 0c7f58762588b7541b150ff6975679fc, type: 2}
+  selectableCharacter: {fileID: 2160646075701528126, guid: 6f9f882760c58834caebf0407569235b,
+    type: 3}
+  characterSelectionParent: {fileID: 1492709447}
+  quantumMenuUIController: {fileID: 1062840278}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
