@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60fd5b5033e6fc240a11b8a1e6bb796d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c64271ebda6f3041ae2e55f2bb53c70, type: 3}
   m_Name: DefaultWeaponData
   m_EditorClassIdentifier: 
   Identifier:
-    Path: QuantumUser/Simulation/Data/DefaultWeaponData
+    Path: QuantumUser/Simulation/Data/Weapons/DefaultWeaponData
     Guid:
-      Value: 537453658212404160
+      Value: 370859891313704525
   Cooldown:
     RawValue: 131072
   Offset:
@@ -25,4 +25,3 @@ MonoBehaviour:
       RawValue: 98763
     Z:
       RawValue: 117965
-  BulletData: {fileID: 11400000, guid: 444a352161c64b546a1e08f5ea4519fd, type: 2}

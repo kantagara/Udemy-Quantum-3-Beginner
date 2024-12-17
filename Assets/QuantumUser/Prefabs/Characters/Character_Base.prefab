@@ -429,11 +429,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    Type:
+      Value: 1
+    Ammo: 0
     CooldownTime:
       RawValue: 0
     WeaponData:
       Id:
-        Value: 537453658212404160
+        Value: 410684123476426548
 --- !u!114 &6488666346552184208
 MonoBehaviour:
   m_ObjectHideFlags: 0

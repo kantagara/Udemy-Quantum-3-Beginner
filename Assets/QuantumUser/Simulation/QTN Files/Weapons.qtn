@@ -1,7 +1,9 @@
 component Weapon
 {
+    WeaponType Type;
+    byte Ammo;
     FP CooldownTime;
-    AssetRef<WeaponData> WeaponData;
+    AssetRef<WeaponBase> WeaponData;
 }
 
 component Bullet
@@ -14,4 +16,14 @@ component Bullet
     FPVector2 Direction;
 }
 
-signal CreateBullet(EntityRef owner, WeaponData weaponData);
+enum WeaponType
+{
+    AK,
+    Pistol,
+    Revolver,
+    Shotgun,
+    SMG,
+    Sniper
+}
+
+signal CreateBullet(EntityRef owner, FiringWeapon weaponData);

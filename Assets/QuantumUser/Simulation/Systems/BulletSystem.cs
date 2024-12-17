@@ -61,7 +61,8 @@ namespace Quantum {
       public Transform2D* Transform;
     }
 
-    public void CreateBullet(Frame f, EntityRef owner, WeaponData weaponData)
+
+    public void CreateBullet(Frame f, EntityRef owner, FiringWeapon weaponData)
     {
       var bulletData = weaponData.BulletData;
       var bulletEntity = f.Create(bulletData.Bullet);

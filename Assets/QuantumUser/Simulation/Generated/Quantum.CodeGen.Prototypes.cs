@@ -228,8 +228,10 @@ namespace Quantum.Prototypes {
   [System.SerializableAttribute()]
   [Quantum.Prototypes.Prototype(typeof(Quantum.Weapon))]
   public unsafe partial class WeaponPrototype : ComponentPrototype<Quantum.Weapon> {
+    public Quantum.QEnum32<WeaponType> Type;
+    public Byte Ammo;
     public FP CooldownTime;
-    public AssetRef<WeaponData> WeaponData;
+    public AssetRef<WeaponBase> WeaponData;
     partial void MaterializeUser(Frame frame, ref Quantum.Weapon result, in PrototypeMaterializationContext context);
     public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
         Quantum.Weapon component = default;
@@ -237,6 +239,8 @@ namespace Quantum.Prototypes {
         return f.Set(entity, component) == SetResult.ComponentAdded;
     }
     public void Materialize(Frame frame, ref Quantum.Weapon result, in PrototypeMaterializationContext context = default) {
+        result.Type = this.Type;
+        result.Ammo = this.Ammo;
         result.CooldownTime = this.CooldownTime;
         result.WeaponData = this.WeaponData;
         MaterializeUser(frame, ref result, in context);
