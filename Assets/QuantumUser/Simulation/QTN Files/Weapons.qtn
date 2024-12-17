@@ -1,6 +1,5 @@
 component Weapon
 {
-    WeaponType Type;
     byte Ammo;
     FP CooldownTime;
     AssetRef<WeaponBase> WeaponData;
@@ -24,6 +23,12 @@ enum WeaponType
     Shotgun,
     SMG,
     Sniper
+}
+
+event WeaponChanged
+{
+    EntityRef Entity;
+    WeaponType WeaponType;
 }
 
 signal CreateBullet(EntityRef owner, FiringWeapon weaponData);

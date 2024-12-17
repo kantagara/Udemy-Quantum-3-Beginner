@@ -145,7 +145,7 @@ TrailRenderer:
         outWeight: 0.0804829
       - serializedVersion: 3
         time: 0.99003977
-        value: 0
+        value: 0.004329004
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 352734409335859384}
   - component: {fileID: 3940719899492931819}
   - component: {fileID: -878153156199976884}
-  - component: {fileID: -2835526079691386455}
+  - component: {fileID: 2111196368795926235}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -289,67 +289,6 @@ MonoBehaviour:
       IsPersistent: 1
       CompoundShapes: []
     Shape3D:
-      ShapeType: 0
-      SphereRadius:
-        RawValue: 0
-      CapsuleRadius:
-        RawValue: 0
-      CapsuleHeight:
-        RawValue: 0
-      PositionOffset:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-      BoxExtents:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-      RotationOffset:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-      UserTag: 0
-      IsPersistent: 1
-      CompoundShapes: []
-    ScaledShape2D:
-      ShapeType: 0
-      PolygonCollider:
-        Id:
-          Value: 0
-      CircleRadius:
-        RawValue: 0
-      CapsuleSize:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-      EdgeExtent:
-        RawValue: 0
-      BoxExtents:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-      PositionOffset:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-      RotationOffset:
-        RawValue: 0
-      UserTag: 0
-      IsPersistent: 1
-      CompoundShapes: []
-    ScaledShape3D:
       ShapeType: 0
       SphereRadius:
         RawValue: 0
@@ -506,7 +445,7 @@ MonoBehaviour:
         RawValue: 0
       Y:
         RawValue: 0
---- !u!114 &-2835526079691386455
+--- !u!114 &2111196368795926235
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

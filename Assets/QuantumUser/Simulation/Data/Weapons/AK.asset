@@ -9,15 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c64271ebda6f3041ae2e55f2bb53c70, type: 3}
-  m_Name: DefaultWeaponData
+  m_Script: {fileID: 11500000, guid: 4c38f77fdab34e71b099fea6abd1069e, type: 3}
+  m_Name: AK
   m_EditorClassIdentifier: 
   Identifier:
-    Path: QuantumUser/Simulation/Data/Weapons/DefaultWeaponData
+    Path: QuantumUser/Simulation/Data/Weapons/AK
     Guid:
-      Value: 370859891313704525
+      Value: 492250738308018285
+  WeaponType: 0
   Cooldown:
-    RawValue: 131072
+    RawValue: 6554
   Offset:
     X:
       RawValue: 2294
@@ -25,3 +26,5 @@ MonoBehaviour:
       RawValue: 98763
     Z:
       RawValue: 117965
+  BulletData: {fileID: 11400000, guid: f55b318bd432d1f448cf798384630993, type: 2}
+  MaxAmmo: 20

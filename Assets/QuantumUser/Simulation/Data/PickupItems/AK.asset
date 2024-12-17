@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bdca007104ca141a2b830d029550c0, type: 3}
+  m_Name: AK
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Simulation/Data/PickupItems/AK
+    Guid:
+      Value: 465959211068843759
+  PickupTime:
+    RawValue: 131072
+  WeaponBase: {fileID: 11400000, guid: c2b23d8d8ae1ac443a2ad5126d788a5b, type: 2}

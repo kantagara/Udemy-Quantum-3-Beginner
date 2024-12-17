@@ -731,8 +731,6 @@ namespace Quantum {
   public unsafe partial struct Weapon : Quantum.IComponent {
     public const Int32 SIZE = 24;
     public const Int32 ALIGNMENT = 8;
-    [FieldOffset(4)]
-    public WeaponType Type;
     [FieldOffset(0)]
     public Byte Ammo;
     [FieldOffset(16)]
@@ -742,7 +740,6 @@ namespace Quantum {
     public override Int32 GetHashCode() {
       unchecked { 
         var hash = 8713;
-        hash = hash * 31 + (Int32)Type;
         hash = hash * 31 + Ammo.GetHashCode();
         hash = hash * 31 + CooldownTime.GetHashCode();
         hash = hash * 31 + WeaponData.GetHashCode();
@@ -752,7 +749,6 @@ namespace Quantum {
     public static void Serialize(void* ptr, FrameSerializer serializer) {
         var p = (Weapon*)ptr;
         serializer.Stream.Serialize(&p->Ammo);
-        serializer.Stream.Serialize((Int32*)&p->Type);
         AssetRef.Serialize(&p->WeaponData, serializer);
         FP.Serialize(&p->CooldownTime, serializer);
     }
@@ -848,7 +844,6 @@ namespace Quantum {
     partial void SetPlayerInputCodeGen(PlayerRef player, Input input) {
       if ((int)player >= (int)_globals->input.Length) { throw new System.ArgumentOutOfRangeException("player"); }
       var i = _globals->input.GetPointer(player);
-      i->Direction = input.Direction;
       i->Direction = input.Direction;
       i->MousePosition = input.MousePosition;
       i->Fire = i->Fire.Update(this.Number, input.Fire);

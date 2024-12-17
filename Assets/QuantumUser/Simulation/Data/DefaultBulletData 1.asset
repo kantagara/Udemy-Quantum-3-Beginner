@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27e1259836904bb4b9e618351970c59c, type: 3}
-  m_Name: DefaultBulletData
+  m_Name: DefaultBulletData 1
   m_EditorClassIdentifier: 
   Identifier:
-    Path: QuantumUser/Simulation/Data/DefaultBulletData
+    Path: QuantumUser/Simulation/Data/DefaultBulletData 1
     Guid:
-      Value: 301701201822632130
+      Value: 459449768947230994
   Duration:
     RawValue: 196608
   Bullet: {fileID: 3097001405596171208, guid: eed538b8e92fbc04da00cbd70b82878e, type: 3}

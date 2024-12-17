@@ -16,6 +16,7 @@ MonoBehaviour:
     Path: QuantumUser/Simulation/Data/Weapons/Pistol
     Guid:
       Value: 410684123476426548
+  WeaponType: 1
   Cooldown:
     RawValue: 131072
   Offset:
@@ -25,5 +26,5 @@ MonoBehaviour:
       RawValue: 98763
     Z:
       RawValue: 117965
-  BulletData: {fileID: 11400000, guid: 444a352161c64b546a1e08f5ea4519fd, type: 2}
+  BulletData: {fileID: 11400000, guid: f55b318bd432d1f448cf798384630993, type: 2}
   MaxAmmo: 1
