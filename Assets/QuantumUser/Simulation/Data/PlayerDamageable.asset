@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17c1f14a9eca3ad4293b59e45a80920d, type: 3}
-  m_Name: DefaultDamageable
+  m_Script: {fileID: 11500000, guid: 5ca7843c9ed945a08e99b792f728692c, type: 3}
+  m_Name: PlayerDamageable
   m_EditorClassIdentifier: 
   Identifier:
-    Path: QuantumUser/Simulation/Data/DefaultDamageable
+    Path: QuantumUser/Simulation/Data/PlayerDamageable
     Guid:
-      Value: 455210708870160897
+      Value: 398384213230919732
   MaxHealth:
     RawValue: 1310720

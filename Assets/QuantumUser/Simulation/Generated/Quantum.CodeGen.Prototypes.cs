@@ -76,7 +76,7 @@ namespace Quantum.Prototypes {
   [Quantum.Prototypes.Prototype(typeof(Quantum.Damageable))]
   public unsafe partial class DamageablePrototype : ComponentPrototype<Quantum.Damageable> {
     public FP Health;
-    public AssetRef<DamageableData> DamageableData;
+    public AssetRef<DamageableBase> DamageableData;
     partial void MaterializeUser(Frame frame, ref Quantum.Damageable result, in PrototypeMaterializationContext context);
     public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
         Quantum.Damageable component = default;

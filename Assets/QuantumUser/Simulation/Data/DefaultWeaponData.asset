@@ -17,7 +17,7 @@ MonoBehaviour:
     Guid:
       Value: 537453658212404160
   Cooldown:
-    RawValue: 131072
+    RawValue: 0
   Offset:
     X:
       RawValue: 2294
