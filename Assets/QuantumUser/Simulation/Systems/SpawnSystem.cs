@@ -12,6 +12,7 @@ namespace Quantum
             if (!firstTime) return;
             var playerEntityRef = CreatePlayer(f, player);
             PlacePlayerOnSpawnPosition(f, playerEntityRef);
+            f.Events.PlayerSpawned(playerEntityRef, f.Get<PlayerLink>(playerEntityRef));
         }
 
         private void PlacePlayerOnSpawnPosition(Frame frame, EntityRef playerEntityRef)

@@ -146,9 +146,9 @@ GameObject:
   - component: {fileID: 2219076549632144039}
   - component: {fileID: 5402916656802441503}
   - component: {fileID: 4019184743239389496}
-  - component: {fileID: 69182961853514060}
-  - component: {fileID: 4305949139058585827}
-  - component: {fileID: 4065442203582808004}
+  - component: {fileID: 6811352917216587793}
+  - component: {fileID: 3342703756595679755}
+  - component: {fileID: 6456693599275366596}
   m_Layer: 6
   m_Name: Character_Base
   m_TagString: Untagged
@@ -480,7 +480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a41eb91c93e11ef4487947690b62d3ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &69182961853514060
+--- !u!114 &6811352917216587793
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -505,7 +505,7 @@ MonoBehaviour:
         RawValue: 0
       Y:
         RawValue: 0
---- !u!114 &4305949139058585827
+--- !u!114 &3342703756595679755
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -517,7 +517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c49b87f4ed6c41843ad6736dead92237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4065442203582808004
+--- !u!114 &6456693599275366596
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

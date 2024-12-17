@@ -39,11 +39,14 @@ namespace Quantum {
         return;
       if(callback.WeaponType == _currentPlayerWeapon.WeaponType)
         return;
+      
       _currentPlayerWeapon.gameObject.SetActive(false);
+      _currentPlayerWeapon.Rig.weight = 0;
       
       _currentPlayerWeapon = _playerWeapons[callback.WeaponType];
       
       _currentPlayerWeapon.gameObject.SetActive(true);
+      _currentPlayerWeapon.Rig.weight = 1;
     }
   }
 }

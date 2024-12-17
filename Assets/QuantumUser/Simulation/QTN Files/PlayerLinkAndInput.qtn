@@ -7,3 +7,9 @@ input {
   FPVector2 MousePosition;
   button Fire;
 }
+
+event PlayerSpawned
+{
+   EntityRef Player;
+   PlayerLink PlayerLink;
+}

@@ -16,6 +16,7 @@ MonoBehaviour:
     Path: QuantumUser/Simulation/Data/Weapons/AK
     Guid:
       Value: 492250738308018285
+  WeaponSprite: {fileID: 21300000, guid: 94d88ac906b982e42a5d32d29e2c8d34, type: 3}
   WeaponType: 0
   Cooldown:
     RawValue: 6554

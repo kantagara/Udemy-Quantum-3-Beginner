@@ -31,4 +31,10 @@ event WeaponChanged
     WeaponType WeaponType;
 }
 
+event AmmoChanged
+{
+    EntityRef Entity;
+    Byte NewAmmo;
+}
+
 signal CreateBullet(EntityRef owner, FiringWeapon weaponData);

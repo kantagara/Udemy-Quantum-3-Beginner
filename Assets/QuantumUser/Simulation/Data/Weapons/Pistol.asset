@@ -16,6 +16,7 @@ MonoBehaviour:
     Path: QuantumUser/Simulation/Data/Weapons/Pistol
     Guid:
       Value: 410684123476426548
+  WeaponSprite: {fileID: 21300000, guid: 508121b9229188d46b3ac8cedebf030c, type: 3}
   WeaponType: 1
   Cooldown:
     RawValue: 131072

@@ -845,6 +845,7 @@ namespace Quantum {
       if ((int)player >= (int)_globals->input.Length) { throw new System.ArgumentOutOfRangeException("player"); }
       var i = _globals->input.GetPointer(player);
       i->Direction = input.Direction;
+      i->Direction = input.Direction;
       i->MousePosition = input.MousePosition;
       i->Fire = i->Fire.Update(this.Number, input.Fire);
     }
