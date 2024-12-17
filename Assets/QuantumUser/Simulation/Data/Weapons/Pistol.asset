@@ -27,5 +27,5 @@ MonoBehaviour:
       RawValue: 98763
     Z:
       RawValue: 117965
-  BulletData: {fileID: 11400000, guid: f55b318bd432d1f448cf798384630993, type: 2}
+  BulletData: {fileID: 11400000, guid: bf6a1dcc10126c04ea4f3f9195f7f831, type: 2}
   MaxAmmo: 1

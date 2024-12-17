@@ -3575,6 +3575,11 @@ PrefabInstance:
       propertyPath: BindBehaviour
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7613737136724776447, guid: 087898557506e714b83fb874784c9772,
+        type: 3}
+      propertyPath: Prototype.WeaponData.Id.Value
+      value: 400169065178236275
+      objectReference: {fileID: 0}
     - target: {fileID: 8118368861413684301, guid: 087898557506e714b83fb874784c9772,
         type: 3}
       propertyPath: m_Layer

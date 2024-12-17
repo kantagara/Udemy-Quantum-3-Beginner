@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1864793c6d06af4ebe1fa2271f47b8d, type: 3}
+  m_Name: ShotgunBullet
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Simulation/Data/BulletData/ShotgunBullet
+    Guid:
+      Value: 511049304479603140
+  Duration:
+    RawValue: 131072
+  Bullet: {fileID: 3097001405596171208, guid: eed538b8e92fbc04da00cbd70b82878e, type: 3}
+  Damage:
+    RawValue: 655360
+  Speed:
+    RawValue: 3932160
+  NumberOfBullets: 3
+  SpreadAngle:
+    RawValue: 1966080

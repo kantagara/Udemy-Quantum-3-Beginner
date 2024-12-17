@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df6694bee2bd2c54ba45130d54a250a9, type: 3}
+  m_Name: RevolverBulletData
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Simulation/Data/BulletData/RevolverBulletData
+    Guid:
+      Value: 457610331628874002
+  Duration:
+    RawValue: 196608
+  Bullet: {fileID: 3097001405596171208, guid: eed538b8e92fbc04da00cbd70b82878e, type: 3}
+  Damage:
+    RawValue: 1310720
+  Speed:
+    RawValue: 2621440
