@@ -17,7 +17,7 @@ namespace Quantum {
       {
         var weaponData = f.FindAsset(filter.Weapon->WeaponData);
         filter.Weapon->CooldownTime = weaponData.Cooldown;
-        Log.Info("Fire!");
+        f.Signals.CreateBullet(filter.Entity, weaponData);
       }
     }
 

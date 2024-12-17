@@ -15,7 +15,7 @@ MonoBehaviour:
   Identifier:
     Path: QuantumUser/Simulation/Data/DefaultWeaponData
     Guid:
-      Value: 484439587831057920
+      Value: 537453658212404160
   Cooldown:
     RawValue: 131072
   Offset:
@@ -25,4 +25,4 @@ MonoBehaviour:
       RawValue: 0
     Z:
       RawValue: 0
-  BulletData: {fileID: 0}
+  BulletData: {fileID: 11400000, guid: 444a352161c64b546a1e08f5ea4519fd, type: 2}
