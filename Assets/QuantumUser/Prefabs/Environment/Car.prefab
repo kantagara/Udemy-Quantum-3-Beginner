@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4749984390886834104}
   - component: {fileID: 2143051372874593806}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1125805768436379144}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,6 +178,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Debris_BrokenCar
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 39e8b9fb757e3294796f1a26f88e2921,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

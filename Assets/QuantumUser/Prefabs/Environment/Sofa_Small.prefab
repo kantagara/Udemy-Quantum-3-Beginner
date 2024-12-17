@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8485205584572677387}
   - component: {fileID: 7243383035636016802}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8542436677620213853}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sofa_Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,6 +178,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sofa_Small
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 92d9e56847bbef04e990c9cd2c6263ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
