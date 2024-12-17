@@ -153,7 +153,7 @@ MonoBehaviour:
       CooldownState:
         _empty_prototype_dummy_field_: 0
   DamageDealingPerSecond:
-    RawValue: 0
+    RawValue: 1310720
   MinimumBounds:
     X:
       RawValue: -1310720
@@ -166,4 +166,3 @@ MonoBehaviour:
       RawValue: 1310720
   StatePrototype:
     _empty_prototype_dummy_field_: 0
-

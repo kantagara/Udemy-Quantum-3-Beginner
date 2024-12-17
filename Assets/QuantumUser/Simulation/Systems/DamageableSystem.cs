@@ -4,10 +4,32 @@ namespace Quantum {
   using Photon.Deterministic;
 
   [Preserve]
-  public unsafe class DamageableSystem : SystemSignalsOnly, ISignalOnComponentAdded<Damageable>, ISignalDamageableHit, ISignalDamageableHealthRestored {
-    
+  public unsafe class DamageableSystem : SystemMainThreadFilter<DamageableSystem.Filter>, ISignalOnComponentAdded<Damageable>, ISignalDamageableHit, ISignalDamageableHealthRestored {
+    public struct Filter
+    {
+      public EntityRef Entity;
+      public Damageable* Damageable;
+    }
 
-   
+    public override void Update(Frame f, ref Filter filter)
+    {
+      if (!f.TryGet<PlayerLink>(filter.Entity, out _))
+        return;
+      var shrinkingCircle = f.GetSingleton<ShrinkingCircle>();
+      if (CheckIfPlayerIsOutsideCircle(f, filter, shrinkingCircle))
+      {
+        var damageableAsset = f.FindAsset<DamageableBase>(filter.Damageable->DamageableData);
+        var shrinkingCircleConfig = f.FindAsset(shrinkingCircle.ShrinkingCircleConfig);
+        damageableAsset.DamageableHit(f, filter.Entity, filter.Entity, shrinkingCircleConfig.DamageDealingPerSecond * f.DeltaTime, filter.Damageable);
+      }
+    }
+
+    private bool CheckIfPlayerIsOutsideCircle(Frame f, Filter filter, ShrinkingCircle shrinkingCircle)
+    {
+      var transform = f.Get<Transform2D>(filter.Entity);
+      return FPVector2.Distance(transform.Position, shrinkingCircle.Position) >= shrinkingCircle.CurrentRadius / 2;
+    }
+
     public void OnAdded(Frame f, EntityRef entity, Damageable* component)
     {
       var damageableData = f.FindAsset(component->DamageableData);
@@ -28,5 +50,7 @@ namespace Quantum {
       f.Events.DamageableHealthUpdate(entity, maxHealth, damageable->Health);
 
     }
+
+    
   }
 }

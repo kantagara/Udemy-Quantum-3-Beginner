@@ -2691,8 +2691,8 @@ MonoBehaviour:
     - rid: 4785686265406160898
     - rid: 4785686265406160899
   - Components:
-    - rid: 5790519571832111104
-    - rid: 5790519571832111105
+    - rid: 5470763839375015936
+    - rid: 5470763839375015937
   SerializedTriangleDataUncompressedSize: 452
   references:
     version: 2
@@ -2887,7 +2887,7 @@ MonoBehaviour:
       type: {class: GrassPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
         _empty_prototype_dummy_field_: 0
-    - rid: 5790519571832111104
+    - rid: 5470763839375015936
       type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
       data:
         Position:
@@ -2897,7 +2897,7 @@ MonoBehaviour:
             RawValue: 0
         Rotation:
           RawValue: 0
-    - rid: 5790519571832111105
+    - rid: 5470763839375015937
       type: {class: ShrinkingCirclePrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
         ShrinkingCircleConfig:
@@ -2925,7 +2925,14 @@ MonoBehaviour:
           RawValue: 0
         TargetRadius:
           RawValue: 0
+        InitialRadiusOfState:
+          RawValue: 0
         CurrentStateIndex: 0
+        Position:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
     - rid: 6608138258155044864
       type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
       data:

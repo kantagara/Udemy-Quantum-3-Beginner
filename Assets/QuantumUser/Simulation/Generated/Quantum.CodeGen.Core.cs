@@ -847,20 +847,24 @@ namespace Quantum {
   }
   [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct ShrinkingCircle : Quantum.IComponentSingleton {
-    public const Int32 SIZE = 64;
+    public const Int32 SIZE = 88;
     public const Int32 ALIGNMENT = 8;
     [FieldOffset(8)]
     public AssetRef<ShrinkingCircleConfig> ShrinkingCircleConfig;
-    [FieldOffset(40)]
+    [FieldOffset(64)]
     public ShrinkingCircleState CurrentState;
     [FieldOffset(24)]
     public FP CurrentTimeToNextState;
     [FieldOffset(16)]
     public FP CurrentRadius;
-    [FieldOffset(32)]
+    [FieldOffset(40)]
     public FP TargetRadius;
+    [FieldOffset(32)]
+    public FP InitialRadiusOfState;
     [FieldOffset(0)]
     public Byte CurrentStateIndex;
+    [FieldOffset(48)]
+    public FPVector2 Position;
     public override Int32 GetHashCode() {
       unchecked { 
         var hash = 929;
@@ -869,7 +873,9 @@ namespace Quantum {
         hash = hash * 31 + CurrentTimeToNextState.GetHashCode();
         hash = hash * 31 + CurrentRadius.GetHashCode();
         hash = hash * 31 + TargetRadius.GetHashCode();
+        hash = hash * 31 + InitialRadiusOfState.GetHashCode();
         hash = hash * 31 + CurrentStateIndex.GetHashCode();
+        hash = hash * 31 + Position.GetHashCode();
         return hash;
       }
     }
@@ -879,7 +885,9 @@ namespace Quantum {
         AssetRef.Serialize(&p->ShrinkingCircleConfig, serializer);
         FP.Serialize(&p->CurrentRadius, serializer);
         FP.Serialize(&p->CurrentTimeToNextState, serializer);
+        FP.Serialize(&p->InitialRadiusOfState, serializer);
         FP.Serialize(&p->TargetRadius, serializer);
+        FPVector2.Serialize(&p->Position, serializer);
         Quantum.ShrinkingCircleState.Serialize(&p->CurrentState, serializer);
     }
   }

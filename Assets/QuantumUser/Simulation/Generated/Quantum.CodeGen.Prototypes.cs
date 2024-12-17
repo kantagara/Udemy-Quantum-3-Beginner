@@ -242,7 +242,9 @@ namespace Quantum.Prototypes {
     public FP CurrentTimeToNextState;
     public FP CurrentRadius;
     public FP TargetRadius;
+    public FP InitialRadiusOfState;
     public Byte CurrentStateIndex;
+    public FPVector2 Position;
     partial void MaterializeUser(Frame frame, ref Quantum.ShrinkingCircle result, in PrototypeMaterializationContext context);
     public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
         Quantum.ShrinkingCircle component = default;
@@ -255,7 +257,9 @@ namespace Quantum.Prototypes {
         result.CurrentTimeToNextState = this.CurrentTimeToNextState;
         result.CurrentRadius = this.CurrentRadius;
         result.TargetRadius = this.TargetRadius;
+        result.InitialRadiusOfState = this.InitialRadiusOfState;
         result.CurrentStateIndex = this.CurrentStateIndex;
+        result.Position = this.Position;
         MaterializeUser(frame, ref result, in context);
     }
   }

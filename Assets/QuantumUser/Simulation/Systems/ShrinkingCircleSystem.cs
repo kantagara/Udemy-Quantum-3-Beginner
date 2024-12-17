@@ -31,7 +31,9 @@ namespace Quantum
             var transform = f.Unsafe.GetPointer<Transform2D>(entity);
             var randomX = f.RNG->Next(config.MinimumBounds.X, config.MaximumBounds.X);
             var randomY = f.RNG->Next(config.MinimumBounds.Y, config.MaximumBounds.Y);
-            transform->Position = new FPVector2(randomX, randomY);
+            var pos = new FPVector2(randomX, randomY);
+            transform->Position = pos;
+            shrinkingCircle->Position = pos;
         }
     }
 }

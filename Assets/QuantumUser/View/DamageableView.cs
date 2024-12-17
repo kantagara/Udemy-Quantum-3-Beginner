@@ -25,6 +25,7 @@ public class DamageableView : QuantumEntityViewComponent
     private void DamageableHit(EventDamageableHealthUpdate callback)
     {
         if(EntityRef != callback.entityRef) return;
+        Debug.LogError(callback.currentHealth);
         StartCoroutine(UpdateHealthUI(callback.maxHealth, callback.currentHealth));
     }
 
