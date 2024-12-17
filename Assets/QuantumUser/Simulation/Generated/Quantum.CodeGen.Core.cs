@@ -744,6 +744,9 @@ namespace Quantum {
   public unsafe partial interface ISignalDamageableHit : ISignal {
     void DamageableHit(Frame f, EntityRef victim, EntityRef hitter, FP damage, Damageable* damageable);
   }
+  public unsafe partial interface ISignalDamageableHealthRestored : ISignal {
+    void DamageableHealthRestored(Frame f, EntityRef entity, Damageable* damageable);
+  }
   public unsafe partial interface ISignalCreateBullet : ISignal {
     void CreateBullet(Frame f, EntityRef owner, WeaponData weaponData);
   }
@@ -751,6 +754,7 @@ namespace Quantum {
   }
   public unsafe partial class Frame {
     private ISignalDamageableHit[] _ISignalDamageableHitSystems;
+    private ISignalDamageableHealthRestored[] _ISignalDamageableHealthRestoredSystems;
     private ISignalCreateBullet[] _ISignalCreateBulletSystems;
     partial void AllocGen() {
       _globals = (_globals_*)Context.Allocator.AllocAndClear(sizeof(_globals_));
@@ -764,6 +768,7 @@ namespace Quantum {
     partial void InitGen() {
       Initialize(this, this.SimulationConfig.Entities, 256);
       _ISignalDamageableHitSystems = BuildSignalsArray<ISignalDamageableHit>();
+      _ISignalDamageableHealthRestoredSystems = BuildSignalsArray<ISignalDamageableHealthRestored>();
       _ISignalCreateBulletSystems = BuildSignalsArray<ISignalCreateBullet>();
       _ComponentSignalsOnAdded = new ComponentReactiveCallbackInvoker[ComponentTypeId.Type.Length];
       _ComponentSignalsOnRemoved = new ComponentReactiveCallbackInvoker[ComponentTypeId.Type.Length];
@@ -852,6 +857,15 @@ namespace Quantum {
           var s = array[i];
           if (_f.SystemIsEnabledInHierarchy((SystemBase)s)) {
             s.DamageableHit(_f, victim, hitter, damage, damageable);
+          }
+        }
+      }
+      public void DamageableHealthRestored(EntityRef entity, Damageable* damageable) {
+        var array = _f._ISignalDamageableHealthRestoredSystems;
+        for (Int32 i = 0; i < array.Length; ++i) {
+          var s = array[i];
+          if (_f.SystemIsEnabledInHierarchy((SystemBase)s)) {
+            s.DamageableHealthRestored(_f, entity, damageable);
           }
         }
       }

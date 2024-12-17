@@ -4,7 +4,7 @@ namespace Quantum {
   using Photon.Deterministic;
 
   [Preserve]
-  public unsafe class DamageableSystem : SystemSignalsOnly, ISignalOnComponentAdded<Damageable>, ISignalDamageableHit {
+  public unsafe class DamageableSystem : SystemSignalsOnly, ISignalOnComponentAdded<Damageable>, ISignalDamageableHit, ISignalDamageableHealthRestored {
     
 
    
@@ -19,6 +19,14 @@ namespace Quantum {
     {
       var damageableBase = f.FindAsset<DamageableBase>(damageable->DamageableData);
       damageableBase.DamageableHit(f, victim, hitter, damage, damageable);
+    }
+
+    public void DamageableHealthRestored(Frame f, EntityRef entity, Damageable* damageable)
+    {
+      var maxHealth = f.FindAsset(damageable->DamageableData).MaxHealth;
+      damageable->Health = maxHealth;
+      f.Events.DamageableHealthUpdate(entity, maxHealth, damageable->Health);
+
     }
   }
 }

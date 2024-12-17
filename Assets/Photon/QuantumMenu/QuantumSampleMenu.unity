@@ -493,6 +493,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7243461719588803421, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0,
         type: 3}
+      propertyPath: ConnectArgs.RuntimePlayers.Array.data[0].PlayerNickname
+      value: Gara
+      objectReference: {fileID: 0}
+    - target: {fileID: 7243461719588803421, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0,
+        type: 3}
       propertyPath: DefaultConnectionArgs.RuntimeConfig.SystemsConfig.Id.Value
       value: 0
       objectReference: {fileID: 0}

@@ -9,7 +9,6 @@ namespace Quantum {
       if(filter.PickupItem->EntityPickingUp == EntityRef.None)
         return;
       filter.PickupItem->CurrentPickupTime += f.DeltaTime;
-      Log.Info(filter.PickupItem->CurrentPickupTime);
       if (filter.PickupItem->CurrentPickupTime >= filter.PickupItem->PickupTime)
       {
         var baseConfig = f.FindAsset<PickupItemBase>(filter.PickupItem->PickupItemBase);

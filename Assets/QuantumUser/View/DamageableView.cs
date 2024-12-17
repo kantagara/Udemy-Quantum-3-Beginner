@@ -12,7 +12,7 @@ public class DamageableView : QuantumEntityViewComponent
     public override void OnActivate(Frame frame)
     {
         base.OnActivate(frame);
-        QuantumEvent.Subscribe<EventDamageableHit>(this, DamageableHit);
+        QuantumEvent.Subscribe<EventDamageableHealthUpdate>(this, DamageableHit);
     }
 
     public override void OnDeactivate()
@@ -22,7 +22,7 @@ public class DamageableView : QuantumEntityViewComponent
 
     }
 
-    private void DamageableHit(EventDamageableHit callback)
+    private void DamageableHit(EventDamageableHealthUpdate callback)
     {
         if(EntityRef != callback.entityRef) return;
         StartCoroutine(UpdateHealthUI(callback.maxHealth, callback.currentHealth));

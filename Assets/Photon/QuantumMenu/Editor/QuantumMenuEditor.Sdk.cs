@@ -59,6 +59,8 @@ namespace Quantum.Menu.Editor {
       }
 
       menuConfig.AvailableScenes.Add(sceneInfo);
+      EditorUtility.SetDirty(menuConfig);
+      AssetDatabase.SaveAssets();
 
       AddScenePathToBuildSettings(scenePath);
     }

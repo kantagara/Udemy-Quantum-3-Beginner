@@ -61,14 +61,14 @@ namespace Quantum {
       }
       static partial void GetEventTypeCodeGen(Int32 eventID, ref System.Type result) {
         switch (eventID) {
-          case EventDamageableHit.ID: result = typeof(EventDamageableHit); return;
+          case EventDamageableHealthUpdate.ID: result = typeof(EventDamageableHealthUpdate); return;
           case EventOnPlayerEnteredGrass.ID: result = typeof(EventOnPlayerEnteredGrass); return;
           case EventOnPlayerExitGrass.ID: result = typeof(EventOnPlayerExitGrass); return;
           default: break;
         }
       }
-      public EventDamageableHit DamageableHit(EntityRef entityRef, FP maxHealth, FP currentHealth) {
-        var ev = _f.Context.AcquireEvent<EventDamageableHit>(EventDamageableHit.ID);
+      public EventDamageableHealthUpdate DamageableHealthUpdate(EntityRef entityRef, FP maxHealth, FP currentHealth) {
+        var ev = _f.Context.AcquireEvent<EventDamageableHealthUpdate>(EventDamageableHealthUpdate.ID);
         ev.entityRef = entityRef;
         ev.maxHealth = maxHealth;
         ev.currentHealth = currentHealth;
@@ -89,15 +89,15 @@ namespace Quantum {
       }
     }
   }
-  public unsafe partial class EventDamageableHit : EventBase {
+  public unsafe partial class EventDamageableHealthUpdate : EventBase {
     public new const Int32 ID = 1;
     public EntityRef entityRef;
     public FP maxHealth;
     public FP currentHealth;
-    protected EventDamageableHit(Int32 id, EventFlags flags) : 
+    protected EventDamageableHealthUpdate(Int32 id, EventFlags flags) : 
         base(id, flags) {
     }
-    public EventDamageableHit() : 
+    public EventDamageableHealthUpdate() : 
         base(1, EventFlags.Server|EventFlags.Client) {
     }
     public new QuantumGame Game {
