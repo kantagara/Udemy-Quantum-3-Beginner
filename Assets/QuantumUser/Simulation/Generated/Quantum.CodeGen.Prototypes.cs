@@ -140,6 +140,25 @@ namespace Quantum.Prototypes {
     }
   }
   [System.SerializableAttribute()]
+  [Quantum.Prototypes.Prototype(typeof(Quantum.PickupItem))]
+  public unsafe class PickupItemPrototype : ComponentPrototype<Quantum.PickupItem> {
+    public MapEntityId EntityPickingUp;
+    public FP CurrentPickupTime;
+    public FP PickupTime;
+    public AssetRef<PickupItemBase> PickupItemBase;
+    public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
+        Quantum.PickupItem component = default;
+        Materialize((Frame)f, ref component, in context);
+        return f.Set(entity, component) == SetResult.ComponentAdded;
+    }
+    public void Materialize(Frame frame, ref Quantum.PickupItem result, in PrototypeMaterializationContext context = default) {
+        PrototypeValidator.FindMapEntity(this.EntityPickingUp, in context, out result.EntityPickingUp);
+        result.CurrentPickupTime = this.CurrentPickupTime;
+        result.PickupTime = this.PickupTime;
+        result.PickupItemBase = this.PickupItemBase;
+    }
+  }
+  [System.SerializableAttribute()]
   [Quantum.Prototypes.Prototype(typeof(Quantum.PlayerLink))]
   public unsafe partial class PlayerLinkPrototype : ComponentPrototype<Quantum.PlayerLink> {
     public PlayerRef Player;

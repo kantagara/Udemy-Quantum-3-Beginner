@@ -2671,27 +2671,6 @@ MonoBehaviour:
     - rid: 1697498489879003136
     - rid: 1697498489879003137
   - Components:
-    - rid: 324329447425572864
-    - rid: 324329447425572865
-  - Components:
-    - rid: 5656102737738203136
-    - rid: 5656102737738203137
-  - Components:
-    - rid: 4341173913527517184
-    - rid: 4341173913527517185
-  - Components:
-    - rid: 4003156632962859008
-    - rid: 4003156632962859009
-  - Components:
-    - rid: 5780768338212814848
-    - rid: 5780768338212814849
-  - Components:
-    - rid: 8576867310768226304
-    - rid: 8576867310768226305
-  - Components:
-    - rid: 6152954649860112384
-    - rid: 6152954649860112385
-  - Components:
     - rid: 4628247901947035648
     - rid: 4628247901947035649
     - rid: 4628247901947035650
@@ -2706,63 +2685,26 @@ MonoBehaviour:
     - rid: 6608138258155044865
     - rid: 6608138258155044866
     - rid: 6608138258155044867
+  - Components:
+    - rid: 7964514371470622720
+    - rid: 7964514371470622721
+    - rid: 7964514371470622722
+    - rid: 7964514371470622723
   SerializedTriangleDataUncompressedSize: 452
   references:
     version: 2
     RefIds:
-    - rid: 324329447425572864
-      type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
-      data:
-        Position:
-          X:
-            RawValue: -655360
-          Y:
-            RawValue: 0
-        Rotation:
-          RawValue: 0
-    - rid: 324329447425572865
-      type: {class: SpawnPointPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
-      data:
-        _empty_prototype_dummy_field_: 0
     - rid: 1697498489879003136
       type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
       data:
         Position:
           X:
-            RawValue: 655360
+            RawValue: 916193
           Y:
             RawValue: 0
         Rotation:
           RawValue: 0
     - rid: 1697498489879003137
-      type: {class: SpawnPointPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
-      data:
-        _empty_prototype_dummy_field_: 0
-    - rid: 4003156632962859008
-      type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
-      data:
-        Position:
-          X:
-            RawValue: -2372403
-          Y:
-            RawValue: 1939865
-        Rotation:
-          RawValue: 0
-    - rid: 4003156632962859009
-      type: {class: SpawnPointPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
-      data:
-        _empty_prototype_dummy_field_: 0
-    - rid: 4341173913527517184
-      type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
-      data:
-        Position:
-          X:
-            RawValue: -51773
-          Y:
-            RawValue: 1939865
-        Rotation:
-          RawValue: 0
-    - rid: 4341173913527517185
       type: {class: SpawnPointPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
         _empty_prototype_dummy_field_: 0
@@ -2878,48 +2820,6 @@ MonoBehaviour:
       type: {class: GrassPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
         _empty_prototype_dummy_field_: 0
-    - rid: 5656102737738203136
-      type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
-      data:
-        Position:
-          X:
-            RawValue: -51773
-          Y:
-            RawValue: -1755709
-        Rotation:
-          RawValue: 0
-    - rid: 5656102737738203137
-      type: {class: SpawnPointPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
-      data:
-        _empty_prototype_dummy_field_: 0
-    - rid: 5780768338212814848
-      type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
-      data:
-        Position:
-          X:
-            RawValue: -2372403
-          Y:
-            RawValue: -1762918
-        Rotation:
-          RawValue: 0
-    - rid: 5780768338212814849
-      type: {class: SpawnPointPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
-      data:
-        _empty_prototype_dummy_field_: 0
-    - rid: 6152954649860112384
-      type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
-      data:
-        Position:
-          X:
-            RawValue: 2133196
-          Y:
-            RawValue: 1690828
-        Rotation:
-          RawValue: 0
-    - rid: 6152954649860112385
-      type: {class: SpawnPointPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
-      data:
-        _empty_prototype_dummy_field_: 0
     - rid: 6608138258155044864
       type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
       data:
@@ -2991,17 +2891,67 @@ MonoBehaviour:
       data:
         AvailableSpawnPoints: []
         UsedSpawnPoints: []
-    - rid: 8576867310768226304
+    - rid: 7964514371470622720
       type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
       data:
         Position:
           X:
-            RawValue: 2133196
+            RawValue: 916193
           Y:
-            RawValue: -1762918
+            RawValue: 401080
         Rotation:
           RawValue: 0
-    - rid: 8576867310768226305
-      type: {class: SpawnPointPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+    - rid: 7964514371470622721
+      type: {class: PhysicsCollider2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
       data:
-        _empty_prototype_dummy_field_: 0
+        ShapeConfig:
+          ShapeType: 32
+          PolygonCollider:
+            Id:
+              Value: 0
+          CircleRadius:
+            RawValue: 0
+          CapsuleSize:
+            X:
+              RawValue: 65536
+            Y:
+              RawValue: 131072
+          EdgeExtent:
+            RawValue: 0
+          BoxExtents:
+            X:
+              RawValue: 0
+            Y:
+              RawValue: 0
+          PositionOffset:
+            X:
+              RawValue: 0
+            Y:
+              RawValue: 0
+          RotationOffset:
+            RawValue: 0
+          UserTag: 0
+          IsPersistent: 1
+          CompoundShapes: []
+        Layer: 10
+        IsTrigger: 1
+        PhysicsMaterial:
+          Id:
+            Value: 0
+    - rid: 7964514371470622722
+      type: {class: PhysicsCallbacks2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        CallbackFlags:
+          Value: 0
+    - rid: 7964514371470622723
+      type: {class: PickupItemPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        EntityPickingUp:
+          SceneIndexPlusOne: 0
+        CurrentPickupTime:
+          RawValue: 0
+        PickupTime:
+          RawValue: 0
+        PickupItemBase:
+          Id:
+            Value: 496782056037168539

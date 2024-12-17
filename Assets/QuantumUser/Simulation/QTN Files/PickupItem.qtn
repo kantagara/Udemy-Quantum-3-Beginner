@@ -1,0 +1,7 @@
+﻿component PickupItem
+{
+    EntityRef EntityPickingUp;
+    FP CurrentPickupTime;
+    FP PickupTime;
+    AssetRef<PickupItemBase> PickupItemBase;
+}

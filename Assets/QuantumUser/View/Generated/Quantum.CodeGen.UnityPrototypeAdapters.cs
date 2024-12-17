@@ -71,6 +71,23 @@ namespace Quantum.Prototypes.Unity {
     }
   }
   [System.SerializableAttribute()]
+  public unsafe partial class PickupItemPrototype : Quantum.QuantumUnityPrototypeAdapter<Quantum.Prototypes.PickupItemPrototype> {
+    public Quantum.QuantumEntityPrototype EntityPickingUp;
+    public FP CurrentPickupTime;
+    public FP PickupTime;
+    public AssetRef<PickupItemBase> PickupItemBase;
+    partial void ConvertUser(Quantum.QuantumEntityPrototypeConverter converter, ref Quantum.Prototypes.PickupItemPrototype prototype);
+    public override Quantum.Prototypes.PickupItemPrototype Convert(Quantum.QuantumEntityPrototypeConverter converter) {
+      var result = new Quantum.Prototypes.PickupItemPrototype();
+      converter.Convert(this.EntityPickingUp, out result.EntityPickingUp);
+      converter.Convert(this.CurrentPickupTime, out result.CurrentPickupTime);
+      converter.Convert(this.PickupTime, out result.PickupTime);
+      converter.Convert(this.PickupItemBase, out result.PickupItemBase);
+      ConvertUser(converter, ref result);
+      return result;
+    }
+  }
+  [System.SerializableAttribute()]
   public unsafe partial class SpawnPointManagerPrototype : Quantum.QuantumUnityPrototypeAdapter<Quantum.Prototypes.SpawnPointManagerPrototype> {
     [AllocateOnComponentAdded()]
     [DynamicCollectionAttribute()]

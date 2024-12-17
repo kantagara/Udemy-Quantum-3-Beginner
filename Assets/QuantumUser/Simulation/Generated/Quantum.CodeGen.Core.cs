@@ -616,6 +616,36 @@ namespace Quantum {
     }
   }
   [StructLayout(LayoutKind.Explicit)]
+  public unsafe partial struct PickupItem : Quantum.IComponent {
+    public const Int32 SIZE = 32;
+    public const Int32 ALIGNMENT = 8;
+    [FieldOffset(8)]
+    public EntityRef EntityPickingUp;
+    [FieldOffset(16)]
+    public FP CurrentPickupTime;
+    [FieldOffset(24)]
+    public FP PickupTime;
+    [FieldOffset(0)]
+    public AssetRef<PickupItemBase> PickupItemBase;
+    public override Int32 GetHashCode() {
+      unchecked { 
+        var hash = 577;
+        hash = hash * 31 + EntityPickingUp.GetHashCode();
+        hash = hash * 31 + CurrentPickupTime.GetHashCode();
+        hash = hash * 31 + PickupTime.GetHashCode();
+        hash = hash * 31 + PickupItemBase.GetHashCode();
+        return hash;
+      }
+    }
+    public static void Serialize(void* ptr, FrameSerializer serializer) {
+        var p = (PickupItem*)ptr;
+        AssetRef.Serialize(&p->PickupItemBase, serializer);
+        EntityRef.Serialize(&p->EntityPickingUp, serializer);
+        FP.Serialize(&p->CurrentPickupTime, serializer);
+        FP.Serialize(&p->PickupTime, serializer);
+    }
+  }
+  [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct PlayerLink : Quantum.IComponent {
     public const Int32 SIZE = 4;
     public const Int32 ALIGNMENT = 4;
@@ -775,6 +805,8 @@ namespace Quantum {
       BuildSignalsArrayOnComponentRemoved<PhysicsJoints2D>();
       BuildSignalsArrayOnComponentAdded<PhysicsJoints3D>();
       BuildSignalsArrayOnComponentRemoved<PhysicsJoints3D>();
+      BuildSignalsArrayOnComponentAdded<Quantum.PickupItem>();
+      BuildSignalsArrayOnComponentRemoved<Quantum.PickupItem>();
       BuildSignalsArrayOnComponentAdded<Quantum.PlayerLink>();
       BuildSignalsArrayOnComponentRemoved<Quantum.PlayerLink>();
       BuildSignalsArrayOnComponentAdded<Quantum.SpawnPoint>();
@@ -907,6 +939,7 @@ namespace Quantum {
       typeRegistry.Register(typeof(PhysicsJoints3D), PhysicsJoints3D.SIZE);
       typeRegistry.Register(typeof(PhysicsQueryRef), PhysicsQueryRef.SIZE);
       typeRegistry.Register(typeof(PhysicsSceneSettings), PhysicsSceneSettings.SIZE);
+      typeRegistry.Register(typeof(Quantum.PickupItem), Quantum.PickupItem.SIZE);
       typeRegistry.Register(typeof(Quantum.PlayerLink), Quantum.PlayerLink.SIZE);
       typeRegistry.Register(typeof(PlayerRef), PlayerRef.SIZE);
       typeRegistry.Register(typeof(Ptr), Ptr.SIZE);
@@ -927,12 +960,13 @@ namespace Quantum {
       typeRegistry.Register(typeof(Quantum._globals_), Quantum._globals_.SIZE);
     }
     static partial void InitComponentTypeIdGen() {
-      ComponentTypeId.Reset(ComponentTypeId.BuiltInComponentCount + 8)
+      ComponentTypeId.Reset(ComponentTypeId.BuiltInComponentCount + 9)
         .AddBuiltInComponents()
         .Add<Quantum.Bullet>(Quantum.Bullet.Serialize, null, null, ComponentFlags.None)
         .Add<Quantum.Damageable>(Quantum.Damageable.Serialize, null, null, ComponentFlags.None)
         .Add<Quantum.Grass>(Quantum.Grass.Serialize, null, null, ComponentFlags.None)
         .Add<Quantum.KCC>(Quantum.KCC.Serialize, null, null, ComponentFlags.None)
+        .Add<Quantum.PickupItem>(Quantum.PickupItem.Serialize, null, null, ComponentFlags.None)
         .Add<Quantum.PlayerLink>(Quantum.PlayerLink.Serialize, null, null, ComponentFlags.None)
         .Add<Quantum.SpawnPoint>(Quantum.SpawnPoint.Serialize, null, null, ComponentFlags.None)
         .Add<Quantum.SpawnPointManager>(Quantum.SpawnPointManager.Serialize, Quantum.SpawnPointManager.OnAdded, Quantum.SpawnPointManager.OnRemoved, ComponentFlags.Singleton)
