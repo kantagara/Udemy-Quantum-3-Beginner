@@ -9,16 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65db212aebe334441864c82b440384da, type: 3}
+  m_Script: {fileID: 11500000, guid: 999dfcd5965839d4aa3b1a2ddb1bd53c, type: 3}
   m_Name: Default Shrinking Circle Config
   m_EditorClassIdentifier: 
   Identifier:
     Path: QuantumUser/Simulation/Data/Default Shrinking Circle Config
     Guid:
-      Value: 394618928366891116
+      Value: 373888035625785526
   States:
   - TimeToNextState:
-      RawValue: 1310720
+      RawValue: 65536
     CircleStateUnion:
       _field_used_: INITIALSTATE
       InitialState:
@@ -28,11 +28,12 @@ MonoBehaviour:
         TargetRadius:
           RawValue: 0
       ShrinkState:
-        _empty_prototype_dummy_field_: 0
+        ShrinkingCircleTime:
+          RawValue: 0
       CooldownState:
         _empty_prototype_dummy_field_: 0
   - TimeToNextState:
-      RawValue: 1310720
+      RawValue: 65536
     CircleStateUnion:
       _field_used_: PRESHRINKSTATE
       InitialState:
@@ -42,11 +43,12 @@ MonoBehaviour:
         TargetRadius:
           RawValue: 10485760
       ShrinkState:
-        _empty_prototype_dummy_field_: 0
+        ShrinkingCircleTime:
+          RawValue: 0
       CooldownState:
         _empty_prototype_dummy_field_: 0
   - TimeToNextState:
-      RawValue: 1310720
+      RawValue: 65536
     CircleStateUnion:
       _field_used_: SHRINKSTATE
       InitialState:
@@ -56,11 +58,12 @@ MonoBehaviour:
         TargetRadius:
           RawValue: 0
       ShrinkState:
-        _empty_prototype_dummy_field_: 0
+        ShrinkingCircleTime:
+          RawValue: 0
       CooldownState:
         _empty_prototype_dummy_field_: 0
   - TimeToNextState:
-      RawValue: 1310720
+      RawValue: 65536
     CircleStateUnion:
       _field_used_: COOLDOWNSTATE
       InitialState:
@@ -70,11 +73,12 @@ MonoBehaviour:
         TargetRadius:
           RawValue: 0
       ShrinkState:
-        _empty_prototype_dummy_field_: 0
+        ShrinkingCircleTime:
+          RawValue: 0
       CooldownState:
         _empty_prototype_dummy_field_: 0
   - TimeToNextState:
-      RawValue: 1310720
+      RawValue: 65536
     CircleStateUnion:
       _field_used_: PRESHRINKSTATE
       InitialState:
@@ -84,11 +88,12 @@ MonoBehaviour:
         TargetRadius:
           RawValue: 6553600
       ShrinkState:
-        _empty_prototype_dummy_field_: 0
+        ShrinkingCircleTime:
+          RawValue: 0
       CooldownState:
         _empty_prototype_dummy_field_: 0
   - TimeToNextState:
-      RawValue: 1310720
+      RawValue: 65536
     CircleStateUnion:
       _field_used_: SHRINKSTATE
       InitialState:
@@ -98,11 +103,12 @@ MonoBehaviour:
         TargetRadius:
           RawValue: 0
       ShrinkState:
-        _empty_prototype_dummy_field_: 0
+        ShrinkingCircleTime:
+          RawValue: 0
       CooldownState:
         _empty_prototype_dummy_field_: 0
   - TimeToNextState:
-      RawValue: 1310720
+      RawValue: 65536
     CircleStateUnion:
       _field_used_: COOLDOWNSTATE
       InitialState:
@@ -112,11 +118,12 @@ MonoBehaviour:
         TargetRadius:
           RawValue: 0
       ShrinkState:
-        _empty_prototype_dummy_field_: 0
+        ShrinkingCircleTime:
+          RawValue: 0
       CooldownState:
         _empty_prototype_dummy_field_: 0
   - TimeToNextState:
-      RawValue: 1310720
+      RawValue: 65536
     CircleStateUnion:
       _field_used_: PRESHRINKSTATE
       InitialState:
@@ -126,11 +133,12 @@ MonoBehaviour:
         TargetRadius:
           RawValue: 3932160
       ShrinkState:
-        _empty_prototype_dummy_field_: 0
+        ShrinkingCircleTime:
+          RawValue: 0
       CooldownState:
         _empty_prototype_dummy_field_: 0
   - TimeToNextState:
-      RawValue: 1310720
+      RawValue: 65536
     CircleStateUnion:
       _field_used_: SHRINKSTATE
       InitialState:
@@ -140,6 +148,22 @@ MonoBehaviour:
         TargetRadius:
           RawValue: 0
       ShrinkState:
-        _empty_prototype_dummy_field_: 0
+        ShrinkingCircleTime:
+          RawValue: 0
       CooldownState:
         _empty_prototype_dummy_field_: 0
+  DamageDealingPerSecond:
+    RawValue: 0
+  MinimumBounds:
+    X:
+      RawValue: -1310720
+    Y:
+      RawValue: -1310720
+  MaximumBounds:
+    X:
+      RawValue: 1310720
+    Y:
+      RawValue: 1310720
+  StatePrototype:
+    _empty_prototype_dummy_field_: 0
+

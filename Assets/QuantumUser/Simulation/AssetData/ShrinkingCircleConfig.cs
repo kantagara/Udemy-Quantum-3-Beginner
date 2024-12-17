@@ -9,5 +9,7 @@ namespace Quantum
         public ShrinkingCircleStatePrototype[] States;
         public FP DamageDealingPerSecond;
         public FPVector2 MinimumBounds, MaximumBounds;
+        public CooldownStatePrototype StatePrototype;
+
     }
 }
