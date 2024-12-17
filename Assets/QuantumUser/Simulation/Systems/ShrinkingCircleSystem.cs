@@ -8,6 +8,9 @@ namespace Quantum
     {
         public override void Update(Frame f)
         {
+            var gameManager = f.GetSingleton<GameManager>();
+            if(gameManager.CurrentGameState != GameState.Playing)
+                return;
             var shrinkingCircle = f.Unsafe.GetPointerSingleton<ShrinkingCircle>();
             var config = f.FindAsset(shrinkingCircle->ShrinkingCircleConfig);
             shrinkingCircle->CurrentState.UpdateState(f, shrinkingCircle);

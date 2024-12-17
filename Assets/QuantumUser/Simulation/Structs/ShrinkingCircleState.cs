@@ -35,7 +35,6 @@ namespace Quantum
                     shrinkState->ShrinkingCircleTime += f.DeltaTime / TimeToNextState;
                     shrinkingCircle->CurrentRadius = FPMath.Lerp(shrinkingCircle->InitialRadiusOfState,
                         shrinkingCircle->TargetRadius, shrinkState->ShrinkingCircleTime);
-                    Log.Info(shrinkState->ShrinkingCircleTime + " " + shrinkingCircle->CurrentRadius);
                     break;
             }
         }

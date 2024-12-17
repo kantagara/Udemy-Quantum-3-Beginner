@@ -49,6 +49,11 @@ namespace Quantum {
   using RuntimeInitializeOnLoadMethodAttribute = UnityEngine.RuntimeInitializeOnLoadMethodAttribute;
   #endif //;
   
+  public enum GameState : int {
+    WaitingForPlayers,
+    Playing,
+    GameOver,
+  }
   public enum WeaponType : int {
     AK,
     Pistol,
@@ -752,6 +757,32 @@ namespace Quantum {
     }
   }
   [StructLayout(LayoutKind.Explicit)]
+  public unsafe partial struct GameManager : Quantum.IComponentSingleton {
+    public const Int32 SIZE = 24;
+    public const Int32 ALIGNMENT = 8;
+    [FieldOffset(0)]
+    public GameState CurrentGameState;
+    [FieldOffset(16)]
+    public FP TimeToWaitForPlayers;
+    [FieldOffset(8)]
+    public AssetRef<GameManagerConfig> GameManagerConfig;
+    public override Int32 GetHashCode() {
+      unchecked { 
+        var hash = 14767;
+        hash = hash * 31 + (Int32)CurrentGameState;
+        hash = hash * 31 + TimeToWaitForPlayers.GetHashCode();
+        hash = hash * 31 + GameManagerConfig.GetHashCode();
+        return hash;
+      }
+    }
+    public static void Serialize(void* ptr, FrameSerializer serializer) {
+        var p = (GameManager*)ptr;
+        serializer.Stream.Serialize((Int32*)&p->CurrentGameState);
+        AssetRef.Serialize(&p->GameManagerConfig, serializer);
+        FP.Serialize(&p->TimeToWaitForPlayers, serializer);
+    }
+  }
+  [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct Grass : Quantum.IComponent {
     public const Int32 SIZE = 4;
     public const Int32 ALIGNMENT = 4;
@@ -1001,6 +1032,12 @@ namespace Quantum {
   public unsafe partial interface ISignalDamageableHealthRestored : ISignal {
     void DamageableHealthRestored(Frame f, EntityRef entity, Damageable* damageable);
   }
+  public unsafe partial interface ISignalDamageableDestroyed : ISignal {
+    void DamageableDestroyed(Frame f, EntityRef entity);
+  }
+  public unsafe partial interface ISignalPlayerKilled : ISignal {
+    void PlayerKilled(Frame f);
+  }
   public unsafe partial interface ISignalCreateBullet : ISignal {
     void CreateBullet(Frame f, EntityRef owner, FiringWeapon weaponData);
   }
@@ -1009,6 +1046,8 @@ namespace Quantum {
   public unsafe partial class Frame {
     private ISignalDamageableHit[] _ISignalDamageableHitSystems;
     private ISignalDamageableHealthRestored[] _ISignalDamageableHealthRestoredSystems;
+    private ISignalDamageableDestroyed[] _ISignalDamageableDestroyedSystems;
+    private ISignalPlayerKilled[] _ISignalPlayerKilledSystems;
     private ISignalCreateBullet[] _ISignalCreateBulletSystems;
     partial void AllocGen() {
       _globals = (_globals_*)Context.Allocator.AllocAndClear(sizeof(_globals_));
@@ -1023,6 +1062,8 @@ namespace Quantum {
       Initialize(this, this.SimulationConfig.Entities, 256);
       _ISignalDamageableHitSystems = BuildSignalsArray<ISignalDamageableHit>();
       _ISignalDamageableHealthRestoredSystems = BuildSignalsArray<ISignalDamageableHealthRestored>();
+      _ISignalDamageableDestroyedSystems = BuildSignalsArray<ISignalDamageableDestroyed>();
+      _ISignalPlayerKilledSystems = BuildSignalsArray<ISignalPlayerKilled>();
       _ISignalCreateBulletSystems = BuildSignalsArray<ISignalCreateBullet>();
       _ComponentSignalsOnAdded = new ComponentReactiveCallbackInvoker[ComponentTypeId.Type.Length];
       _ComponentSignalsOnRemoved = new ComponentReactiveCallbackInvoker[ComponentTypeId.Type.Length];
@@ -1034,6 +1075,8 @@ namespace Quantum {
       BuildSignalsArrayOnComponentRemoved<CharacterController3D>();
       BuildSignalsArrayOnComponentAdded<Quantum.Damageable>();
       BuildSignalsArrayOnComponentRemoved<Quantum.Damageable>();
+      BuildSignalsArrayOnComponentAdded<Quantum.GameManager>();
+      BuildSignalsArrayOnComponentRemoved<Quantum.GameManager>();
       BuildSignalsArrayOnComponentAdded<Quantum.Grass>();
       BuildSignalsArrayOnComponentRemoved<Quantum.Grass>();
       BuildSignalsArrayOnComponentAdded<Quantum.KCC>();
@@ -1127,6 +1170,24 @@ namespace Quantum {
           }
         }
       }
+      public void DamageableDestroyed(EntityRef entity) {
+        var array = _f._ISignalDamageableDestroyedSystems;
+        for (Int32 i = 0; i < array.Length; ++i) {
+          var s = array[i];
+          if (_f.SystemIsEnabledInHierarchy((SystemBase)s)) {
+            s.DamageableDestroyed(_f, entity);
+          }
+        }
+      }
+      public void PlayerKilled() {
+        var array = _f._ISignalPlayerKilledSystems;
+        for (Int32 i = 0; i < array.Length; ++i) {
+          var s = array[i];
+          if (_f.SystemIsEnabledInHierarchy((SystemBase)s)) {
+            s.PlayerKilled(_f);
+          }
+        }
+      }
       public void CreateBullet(EntityRef owner, FiringWeapon weaponData) {
         var array = _f._ISignalCreateBulletSystems;
         for (Int32 i = 0; i < array.Length; ++i) {
@@ -1180,6 +1241,8 @@ namespace Quantum {
       typeRegistry.Register(typeof(FPVector3), FPVector3.SIZE);
       typeRegistry.Register(typeof(FrameMetaData), FrameMetaData.SIZE);
       typeRegistry.Register(typeof(FrameTimer), FrameTimer.SIZE);
+      typeRegistry.Register(typeof(Quantum.GameManager), Quantum.GameManager.SIZE);
+      typeRegistry.Register(typeof(Quantum.GameState), 4);
       typeRegistry.Register(typeof(Quantum.Grass), Quantum.Grass.SIZE);
       typeRegistry.Register(typeof(HingeJoint), HingeJoint.SIZE);
       typeRegistry.Register(typeof(HingeJoint3D), HingeJoint3D.SIZE);
@@ -1240,10 +1303,11 @@ namespace Quantum {
       typeRegistry.Register(typeof(Quantum._globals_), Quantum._globals_.SIZE);
     }
     static partial void InitComponentTypeIdGen() {
-      ComponentTypeId.Reset(ComponentTypeId.BuiltInComponentCount + 11)
+      ComponentTypeId.Reset(ComponentTypeId.BuiltInComponentCount + 12)
         .AddBuiltInComponents()
         .Add<Quantum.Bullet>(Quantum.Bullet.Serialize, null, null, ComponentFlags.None)
         .Add<Quantum.Damageable>(Quantum.Damageable.Serialize, null, null, ComponentFlags.None)
+        .Add<Quantum.GameManager>(Quantum.GameManager.Serialize, null, null, ComponentFlags.Singleton)
         .Add<Quantum.Grass>(Quantum.Grass.Serialize, null, null, ComponentFlags.None)
         .Add<Quantum.KCC>(Quantum.KCC.Serialize, null, null, ComponentFlags.None)
         .Add<Quantum.PickupItem>(Quantum.PickupItem.Serialize, null, null, ComponentFlags.None)
@@ -1258,6 +1322,7 @@ namespace Quantum {
     [Preserve()]
     public static void EnsureNotStrippedGen() {
       FramePrinter.EnsureNotStripped();
+      FramePrinter.EnsurePrimitiveNotStripped<Quantum.GameState>();
       FramePrinter.EnsurePrimitiveNotStripped<Quantum.InputButtons>();
       FramePrinter.EnsurePrimitiveNotStripped<Quantum.WeaponType>();
     }

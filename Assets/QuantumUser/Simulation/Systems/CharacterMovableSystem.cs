@@ -6,6 +6,9 @@ namespace Quantum {
   public unsafe class CharacterMovableSystem : SystemMainThreadFilter<CharacterMovableSystem.Filter>, ISignalOnTriggerEnter2D, ISignalOnTriggerExit2D {
     public override void Update(Frame f, ref Filter filter)
     {
+      var gameManager = f.GetSingleton<GameManager>();
+      if(gameManager.CurrentGameState == GameState.GameOver)
+        return;
       var input = f.GetPlayerInput(filter.PlayerLink->Player);
       MovePlayer(f, filter, input);
       RotatePlayer(f, filter, input);
