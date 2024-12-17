@@ -20,23 +20,4 @@ public class CountdownUI : QuantumSceneViewComponent
         timeRemainingText.text = time.AsFloat.ToString("F2", CultureInfo.InvariantCulture);
         timeProgressImage.fillAmount = (time.AsFloat / currentState.TimeToNextState.AsFloat);
     }
-    
-    public override void OnActivate(Frame frame)
-    {
-        QuantumEvent.Subscribe<EventGameOver>(this, GameOver);
-    }
-
-    private void GameOver(EventGameOver callback)
-    {
-        var f = callback.Game.Frames.Predicted;
-        var playerRef = f.Get<PlayerLink>(callback.Winner).Player;
-        var playerData = f.GetPlayerData(playerRef);
-        Debug.Log("Winner is " + playerData.PlayerNickname);
-
-    }
-
-    public override void OnDeactivate()
-    {
-        QuantumEvent.UnsubscribeListener(this);
-    }
 }

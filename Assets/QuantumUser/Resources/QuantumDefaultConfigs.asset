@@ -470,3 +470,15 @@ MonoBehaviour:
   - WeaponType: 1
     EntityPrototype: {fileID: 3097001405596171208, guid: 16923f1ca83aede44adc48e9f8c19dd7,
       type: 3}
+  - WeaponType: 2
+    EntityPrototype: {fileID: 3097001405596171208, guid: d76a5cb4e6969f940b86b009baa152e9,
+      type: 3}
+  - WeaponType: 3
+    EntityPrototype: {fileID: 3097001405596171208, guid: 3788a03018cb15f4ca8eec8e584cdc00,
+      type: 3}
+  - WeaponType: 4
+    EntityPrototype: {fileID: 3097001405596171208, guid: 52c6851d6df8ca54c883c230c60adea5,
+      type: 3}
+  - WeaponType: 5
+    EntityPrototype: {fileID: 3097001405596171208, guid: dd11141160c4cb1448e8891597a7f9e5,
+      type: 3}
