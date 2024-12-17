@@ -1,0 +1,43 @@
+singleton component ShrinkingCircle
+{
+    AssetRef<ShrinkingCircleConfig> ShrinkingCircleConfig;
+    ShrinkingCircleState CurrentState;
+    FP CurrentTimeToNextState;
+    FP CurrentRadius;
+    FP TargetRadius;
+    byte CurrentStateIndex;
+}
+
+component ShrinkingCircleState
+{
+    FP TimeToNextState;
+    CircleStateUnion CircleStateUnion;
+}
+
+union CircleStateUnion
+{
+    InitialState InitialState;
+    PreShrinkState PreShrinkState;
+    ShrinkState ShrinkState;
+    CooldownState CooldownState;
+}
+
+struct InitialState
+{
+    FP InitialRadius;
+}
+
+struct PreShrinkState
+{
+    FP TargetRadius;
+}
+
+struct ShrinkState
+{
+    FP ShrinkingCircleTime;
+}
+
+struct CooldownState
+{
+
+}
