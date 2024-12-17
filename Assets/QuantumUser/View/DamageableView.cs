@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using Photon.Deterministic;
 using Quantum;
 using UnityEngine;
@@ -8,6 +9,8 @@ using UnityEngine.UI;
 public class DamageableView : QuantumEntityViewComponent
 {
     [SerializeField] private Image healthImage;
+
+    private Tween _tween;
 
     public override void OnActivate(Frame frame)
     {
@@ -25,17 +28,9 @@ public class DamageableView : QuantumEntityViewComponent
     private void DamageableHit(EventDamageableHealthUpdate callback)
     {
         if(EntityRef != callback.entityRef) return;
-        Debug.LogError(callback.currentHealth);
-        StartCoroutine(UpdateHealthUI(callback.maxHealth, callback.currentHealth));
+        _tween?.Kill();
+        _tween = healthImage.DOFillAmount((callback.currentHealth / callback.maxHealth).AsFloat, .1f);
     }
 
-    private IEnumerator UpdateHealthUI(FP maxHealth, FP currentHealth)
-    {
-        float percentage = (currentHealth / maxHealth).AsFloat;
-        while (!Mathf.Approximately(percentage, healthImage.fillAmount))
-        {
-            healthImage.fillAmount = Mathf.Lerp(percentage, healthImage.fillAmount, 0.1f);
-            yield return null;
-        }
-    }
+  
 }

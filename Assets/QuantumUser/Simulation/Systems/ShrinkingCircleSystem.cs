@@ -19,6 +19,7 @@ namespace Quantum
             shrinkingCircle->CurrentStateIndex++;
             config.States[shrinkingCircle->CurrentStateIndex].Materialize(f, ref shrinkingCircle->CurrentState);
             shrinkingCircle->CurrentState.EnterState(shrinkingCircle);
+            f.Events.ShrinkingCircleChangedState();
         }
 
         public unsafe void OnAdded(Frame f, EntityRef entity, ShrinkingCircle* shrinkingCircle)
