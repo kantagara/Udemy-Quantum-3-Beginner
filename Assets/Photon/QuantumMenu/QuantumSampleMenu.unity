@@ -390,6 +390,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1048566170}
     m_Modifications:
+    - target: {fileID: 114227335109315580, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114227335109315580, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114227335109315580, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114227335109315580, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114227335109315580, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 323108692306304990, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -438,12 +463,22 @@ PrefabInstance:
     - target: {fileID: 3409366690421426758, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822158957990351311, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5453189745447701615, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0,
         type: 3}
       propertyPath: m_Name
       value: QuantumMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 5539803099588372396, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0,
+        type: 3}
+      propertyPath: m_text
+      value: CHARACTER SELECTION
       objectReference: {fileID: 0}
     - target: {fileID: 6977112800963913883, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0,
         type: 3}
@@ -642,7 +677,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1557784162981459829, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0, type: 3}

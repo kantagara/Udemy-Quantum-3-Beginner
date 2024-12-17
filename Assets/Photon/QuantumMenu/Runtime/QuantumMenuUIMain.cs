@@ -215,6 +215,7 @@ namespace Quantum.Menu {
     /// Is called when the <see cref="_characterButton"/> is pressed using SendMessage() from the UI object.
     /// </summary>
     protected virtual void OnCharacterButtonPressed() {
+      Controller.Show<QuantumMenuUICharacterSelection>();
     }
 
     /// <summary>
