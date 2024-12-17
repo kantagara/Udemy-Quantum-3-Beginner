@@ -1,0 +1,15 @@
+component Weapon
+{
+    FP CooldownTime;
+    AssetRef<WeaponData> WeaponData;
+}
+
+component Bullet
+{
+    EntityRef Owner;
+    FP Damage;
+    FP Time;
+    FP Speed;
+    FPVector3 Direction;
+}
+

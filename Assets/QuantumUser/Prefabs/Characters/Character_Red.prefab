@@ -3267,7 +3267,7 @@ PrefabInstance:
     - target: {fileID: 6058813873119106819, guid: 087898557506e714b83fb874784c9772,
         type: 3}
       propertyPath: BindBehaviour
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8118368861413684301, guid: 087898557506e714b83fb874784c9772,
         type: 3}
@@ -3584,7 +3584,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9141595333736796838, guid: 087898557506e714b83fb874784c9772, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6992651635901208617, guid: 087898557506e714b83fb874784c9772, type: 3}
     - {fileID: 8250387103834978646, guid: 087898557506e714b83fb874784c9772, type: 3}
